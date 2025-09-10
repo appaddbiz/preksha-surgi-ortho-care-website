@@ -42,7 +42,7 @@ export const metadata = {
 const page = () => {
   return (
     <Layout pageTitle="home">
-      {/* <TopBar /> */}
+      <TopBar />
       <Header />
       <HeaderCloned />
       {/* <MainSliderOne /> */}
