@@ -25,11 +25,11 @@ import ServiceThree from "@/components/ServiceThree/ServiceThree";
 import FaqOne from "@/components/FaqOne/FaqOne";
 import TabOne from "@/components/TabOne/TabOne";
 import CtaTen from "@/components/CtaTen/CtaTen";
-import FooterFive from "@/components/FooterFive/FooterFive";
-import FooterSix from "@/components/FooterSix/FooterSix";
+// import FooterFive from "@/components/FooterFive/FooterFive";
+// import FooterSix from "@/components/FooterSix/FooterSix";
 import FooterTwo from "@/components/FooterTwo/FooterTwo";
 import Banner from "@/components/Banner/Banner";
-import { icon } from "@fortawesome/fontawesome-svg-core";
+// import { icon } from "@fortawesome/fontawesome-svg-core";
 
 export const metadata = {
   title: "Preksha Surgi & Ortho Care",
