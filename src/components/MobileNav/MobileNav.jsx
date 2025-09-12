@@ -11,10 +11,10 @@ const MobileNav = () => {
   const { isExpanded, handleToggle } = useRootContext();
   return (
     <div className={`mobile-nav__wrapper ${isExpanded ? "expanded" : ""}`}>
-      <div
+      {/* <div
         onClick={handleToggle}
         className="mobile-nav__overlay mobile-nav__toggler"
-      ></div>
+      ></div> */}
 
       <div className="mobile-nav__content">
         <span
