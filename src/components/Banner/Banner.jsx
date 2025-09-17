@@ -47,6 +47,41 @@ const Banner = () => {
             </div>
           </div>
           <div className="carousel-item">
+            {/* Banner 1 */}
+            <div className="desk-banner">
+              <img
+                src="/banners/Dr. Shashank Joshi.webp"
+                className="d-block w-100"
+                alt="..."
+              />
+            </div>
+            {/* <div className="mobile-banner">
+              <img
+                src="/banners/mobile.webp"
+                className="d-block w-100"
+                alt="..."
+              />
+            </div> */}
+          </div>
+          <div className="carousel-item">
+            {/* Banner 1 */}
+            <div className="desk-banner">
+              <img
+                src="/banners/Dr. Prerana R T.webp"
+                className="d-block w-100"
+                alt="..."
+              />
+            </div>
+            {/* <div className="mobile-banner">
+              <img
+                src="/banners/mobile.webp"
+                className="d-block w-100"
+                alt="..."
+              />
+            </div> */}
+          </div>
+
+          <div className="carousel-item">
             {/* Banner 2 */}
             <div className="desk-banner">
               <img
