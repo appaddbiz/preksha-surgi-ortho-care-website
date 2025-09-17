@@ -55,13 +55,13 @@ const Banner = () => {
                 alt="..."
               />
             </div>
-            {/* <div className="mobile-banner">
+            <div className="mobile-banner">
               <img
-                src="/banners/mobile.webp"
+                src="/banners/Dr. Shashank Joshi.webp"
                 className="d-block w-100"
                 alt="..."
               />
-            </div> */}
+            </div>
           </div>
           <div className="carousel-item">
             {/* Banner 1 */}
@@ -72,13 +72,13 @@ const Banner = () => {
                 alt="..."
               />
             </div>
-            {/* <div className="mobile-banner">
+            <div className="mobile-banner">
               <img
-                src="/banners/mobile.webp"
+                src="/banners/Dr. Prerana R T.webp"
                 className="d-block w-100"
                 alt="..."
               />
-            </div> */}
+            </div>
           </div>
 
           <div className="carousel-item">
