@@ -63,6 +63,23 @@ const Banner = () => {
               />
             </div>
           </div>
+          <div className="carousel-item">
+            {/* Banner 2 */}
+            <div className="desk-banner">
+              <img
+                src="/banners/Piles, Fistula & Diabetic Foot Care.webp"
+                className="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div className="mobile-banner">
+              <img
+                src="/banners/mobile-1.webp"
+                className="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
           {/* Add more carousel-item blocks for more banners */}
         </div>
         <button
