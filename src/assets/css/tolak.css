@@ -367,9 +367,9 @@ body {
   font-weight: 400;
 }
 
-body.locked {
+/* body.locked {
   overflow: hidden;
-}
+} */
 
 a {
   color: var(--tolak-base, #3d72fc);
