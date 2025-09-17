@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import teamOneData from "@/data/TeamOneData";
 import Image from "next/image";
