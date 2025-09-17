@@ -713,7 +713,7 @@ export const serviceDetailsData = [
     subHeadingTitle: "Appendix Surgery",
     subHeading:
       "Safe & Advanced Appendix Surgery at Preksha Surgi & Ortho Care",
-    thumbnailImage: "/services/appendix-surgery.jpg",
+    thumbnailImage: "/services/Appendix-Surgery.jpg",
     sidebar: {
       title: "All Services:",
       navItems: [
