@@ -1,38 +1,50 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import bannerLayer from "@/assets/images/backgrounds/page-banner-layer.png";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { serviceDetailsData } from "@/data/ServiceDetailsData";
 
 const PageHeader = ({ title, subTitle }) => {
-  return (
-    <section className='page-header'>
-      <div className='page-header__bg'></div>
-      <div className='page-header__shape'></div>
-      <div className='page-header__shape-two'></div>
+  const pathname = usePathname();
 
-      <div className='container'>
-        <div className='row'>
-          <div className='col-md-7'>
-            <div className='page-header__content'>
-              <h2 className='page-header__title'>{title}</h2>
-              <ul className='tolak-breadcrumb list-unstyled'>
+  // match the service object by link
+  const data = serviceDetailsData.find((d) => d.link === pathname);
+
+  return (
+    <section className="page-header">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-7">
+            <div className="page-header__content">
+              <ul className="tolak-breadcrumb list-unstyled">
                 <li>
-                  <Link href='/home1'>Home</Link>
+                  <Link style={{ color: "white" }} href="/">
+                    Home
+                  </Link>
                 </li>
-                <li>
-                  <span>{subTitle}</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className='col-md-5'>
-            <div className='page-header__layer wow fadeInUp' data-aos='fade-up' data-aos-delay='100'>
-              <Image src={bannerLayer} alt='tolak' />
-              <div className='page-header__layer__shape'></div>
-              <div
-                className='page-header__layer__bg wow fadeInRight' data-aos='fade-left'
-                data-aos-delay='200'
-              ></div>
+                {data.headingTitle && (
+                  <li>
+                    <Link
+                      style={{ color: "white" }}
+                      href={`/${data.headingTitle
+                        .toLowerCase()
+                        .replace(/\s+/g, "-")}`}
+                    >
+                      {data.headingTitle}
+                    </Link>
+                  </li>
+                )}
+                {data.subHeadingTitle && (
+                  <li>
+                    <span style={{ color: "white" }}>
+                      {data.subHeadingTitle}
+                    </span>
+                  </li>
+                )}
+              </ul> 
             </div>
           </div>
         </div>

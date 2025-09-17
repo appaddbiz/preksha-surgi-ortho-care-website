@@ -51,9 +51,9 @@ const page = () => {
       {/* <FeatureOne /> */}
       <FunFactTwo />
       {/* <CtaOne /> */}
-      <ServiceOne />
+      <ServiceOne limit={6} />
       <AboutOne />
-      <ServiceThree />
+      <ServiceThree variant="carousel" />
       {/* <FunFactOne /> */}
       {/* <SlideText /> */}
       <CtaTen />

@@ -35,7 +35,7 @@ const Header = ({ dark, rtl }) => {
           <div className="main-header__logo">
             <Link href="/">
               <Image
-                src={"/banners/Preksha Logo.png"}
+                src={"/logo/Preksha Logo.png"}
                 alt="Preksha"
                 width={220}
                 height={55}
@@ -91,7 +91,10 @@ const Header = ({ dark, rtl }) => {
               <span></span>
               <span></span>
             </Link> */}
-            <Link href="contact" className="tolak-btn main-header__btn">
+            <Link
+              href="tel:+919108636085"
+              className="tolak-btn main-header__btn"
+            >
               <b> Appointment</b>
               <span></span>
             </Link>

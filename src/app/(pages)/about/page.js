@@ -1,42 +1,50 @@
-
-import AboutThree from '@/components/AboutThree/AboutThree';
-import CtaOne from '@/components/CtaOne/CtaOne';
-import FaqOne from '@/components/FaqOne/FaqOne';
-import FooterThree from '@/components/FooterThree/FooterThree';
-import FunFactTwo from '@/components/FunFactTwo/FunFactTwo';
-import HeaderInner from '@/components/HeaderInner/HeaderInner';
-import HeaderInnerCloned from '@/components/HeaderInner/HeaderInnerCloned';
-import Layout from '@/components/Layout/Layout';
-import MailTwo from '@/components/MailTwo/MailTwo';
-import PageHeader from '@/components/PageHeader/PageHeader';
-import ServiceTwo from '@/components/ServiceTwo/ServiceTwo';
-import TeamOne from '@/components/TeamOne/TeamOne';
-import TestimonialsTwo from '@/components/TestimonialsTwo/TestimonialsTwo';
-import React from 'react';
+import AboutThree from "@/components/AboutThree/AboutThree";
+import CtaOne from "@/components/CtaOne/CtaOne";
+import FaqOne from "@/components/FaqOne/FaqOne";
+import FooterThree from "@/components/FooterThree/FooterThree";
+import FooterTwo from "@/components/FooterTwo/FooterTwo";
+import FunFactTwo from "@/components/FunFactTwo/FunFactTwo";
+import Header from "@/components/Header/Header";
+import HeaderCloned from "@/components/Header/HeaderCloned";
+import HeaderInner from "@/components/HeaderInner/HeaderInner";
+import HeaderInnerCloned from "@/components/HeaderInner/HeaderInnerCloned";
+import Layout from "@/components/Layout/Layout";
+import MailTwo from "@/components/MailTwo/MailTwo";
+import PageHeader from "@/components/PageHeader/PageHeader";
+import ServiceTwo from "@/components/ServiceTwo/ServiceTwo";
+import TabOne from "@/components/TabOne/TabOne";
+import TeamOne from "@/components/TeamOne/TeamOne";
+import TestimonialsTwo from "@/components/TestimonialsTwo/TestimonialsTwo";
+import TopBar from "@/components/TopBar/TopBar";
+import React from "react";
 
 export const metadata = {
-    title: "About || Tolak || NextJS Template For It Solution & Business",
-    description:
-        "Tolak is a modern NextJS Template for Business, It Solution, Corporate, Agency, Portfolio shops. The template perfectly fits Beauty Spa, Salon, and Wellness Treatments websites and businesses.",
+  title: "Preksha Surgi & Ortho Care",
+  description: "Preksha Surgi & Ortho Care.",
+  icons: {
+    icon: "/banners/Preksha-favicon.png",
+  },
 };
 
 const page = () => {
-    return (
-        <Layout>
-            <HeaderInner />
-            <HeaderInnerCloned />
-            <PageHeader title="About Page" subTitle="About" />
-            <AboutThree />
-            <FunFactTwo />
-            <CtaOne page={true} />
-            <ServiceTwo page={true} titleTwo="two" />
-            <TestimonialsTwo page={true} />
-            <FaqOne />
-            <TeamOne />
-            <MailTwo />
-            <FooterThree />
-        </Layout>
-    );
+  return (
+    <Layout pageTitle="home">
+      <TopBar />
+      <Header />
+      <HeaderCloned />
+      <PageHeader title="About Page" subTitle="About" />
+      <AboutThree />
+      <FunFactTwo />
+      <CtaOne page={true} />
+      <TabOne />
+      {/* <ServiceTwo page={true} titleTwo="two" /> */}
+      {/* <TestimonialsTwo page={true} /> */}
+      <FaqOne />
+      {/* <TeamOne /> */}
+      {/* <MailTwo /> */}
+      <FooterTwo />
+    </Layout>
+  );
 };
 
 export default page;

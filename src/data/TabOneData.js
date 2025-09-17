@@ -29,7 +29,7 @@ export const tabOneData = {
   tabContents: [
     {
       id: 1,
-      image: "/home-images/doctor.jpg", // replace with doctor's photo if available
+      image: "/doctors/dr-shashank.jpg", // replace with doctor's photo if available
       title: "Dr. Shashank Joshi",
       text: "Dr. Shashank Joshi is an Orthopaedic and Joint Replacement Surgeon committed to restoring mobility and improving quality of life. With extensive expertise in managing fractures, trauma care, arthritis, joint replacements, and advanced arthroscopy, he provides comprehensive treatment for patients of all age groups. His compassionate approach ensures both surgical precision and patient comfort.",
       listItems: [
@@ -38,12 +38,14 @@ export const tabOneData = {
         "Arthroscopy & Sports Injury Management",
         "Spine & Back Pain Care",
       ],
+      link: "/our-doctors/dr-shashank-joshi",
       authors: [author1], // can use profile icon/image
     },
     {
       id: 2,
-      image: "/home-images/female-doctor.jpg", // replace with doctor's photo if available
+      image: "/doctors/dr-Prerana-r.jpg", // replace with doctor's photo if available
       title: "Dr. Prerana R T",
+      link: "/our-doctors/dr-prerana-r-t",
       text: "Dr. Prerana R T is a skilled General and Laparoscopic Surgeon specializing in minimally invasive and advanced surgical techniques. She is experienced in treating conditions involving the gall bladder, appendix, gastrointestinal system, breast, and abdominal wall. With a focus on faster recovery and minimal scarring, she delivers surgical care with precision, safety, and compassion for her patients.",
       listItems: [
         "Laparoscopic Surgeries",

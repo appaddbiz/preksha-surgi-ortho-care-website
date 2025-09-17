@@ -2,7 +2,6 @@ import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
-
 const GalleryModal = ({
   clickedImg,
   setClickedImg,
@@ -19,27 +18,29 @@ const GalleryModal = ({
 
   return (
     <>
-      <div className='overlay dismiss' onClick={handleClick}>
+      <div className="overlay dismiss" onClick={handleClick}>
         <div>
-          <Image src={clickedImg} alt='bigger pic' />
-          <p
-
-          >
+          <Image src={clickedImg} width={400} height={307} alt="bigger pic" />
+          <p>
             {currentIndex + 1} / {length}
           </p>
         </div>
-        <span className='dismiss' onClick={handleClick}>
+        <span className="dismiss" onClick={handleClick}>
           X
         </span>
-        <div onClick={handelRotationLeft} className='overlay-arrows_left'>
-          <FontAwesomeIcon icon={faCaretLeft} size="2xl" style={{ color: "#f6f5f4", }} />
-
+        <div onClick={handelRotationLeft} className="overlay-arrows_left">
+          <FontAwesomeIcon
+            icon={faCaretLeft}
+            size="2xl"
+            style={{ color: "#f6f5f4" }}
+          />
         </div>
-        <div onClick={handelRotationRight} className='overlay-arrows_right'>
-          <FontAwesomeIcon icon={faCaretRight} size="2xl" style={{ color: "#f6f5f4", }} />
-
-
-
+        <div onClick={handelRotationRight} className="overlay-arrows_right">
+          <FontAwesomeIcon
+            icon={faCaretRight}
+            size="2xl"
+            style={{ color: "#f6f5f4" }}
+          />
         </div>
       </div>
     </>

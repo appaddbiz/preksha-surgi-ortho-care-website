@@ -10,6 +10,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import VideoModal from "../VideoModal/VideoModal";
 import AnimatedProgressBar from "../AnimatedProgressBar/AnimatedProgressBar";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
 const {
   shape,
   shape2,
@@ -24,6 +26,7 @@ const {
   title,
   text,
   text2,
+  text3,
   percentage,
   lists,
   skillTitle,
@@ -34,6 +37,8 @@ const {
 } = aboutThreeData;
 
 const AboutThree = () => {
+  const path = usePathname();
+
   const [counterOn, setCounterOn] = useState(false);
   const [isOpen, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -101,7 +106,7 @@ const AboutThree = () => {
                   <Col md={6}>
                     <div className=" about-three__image__two">
                       <Image
-                        src={"/home-images/Surgi-Ortho-Care.jpg"}
+                        src={"/gallery/_JUP0245.webp"}
                         width={301}
                         height={554}
                         alt="tolak"
@@ -144,6 +149,17 @@ const AboutThree = () => {
                     <Fragment key={i}>{t}</Fragment>
                   ))}
                 </p>
+                {path === "/about" && (
+                  <p
+                    className="about-three__content__text"
+                    style={{ textAlign: "justify" }}
+                  >
+                    {text3.split("\n").map((t, i) => (
+                      <Fragment key={i}>{t}</Fragment>
+                    ))}
+                  </p>
+                )}
+
                 {/* <div className='about-three__content__bar'></div> */}
                 {/* <Row>
                   <Col md={5}>
@@ -164,21 +180,25 @@ const AboutThree = () => {
 
                   </Col>
                 </Row> */}
-                <div className="about-three__content__quote">{contQuote}</div>
-                <Row>
-                  <Col md={6} className="faq-one__image">
-                    <Link href="#" className="tolak-btn">
-                      <b>Discover More</b>
-                      <span></span>
-                    </Link>
-                  </Col>
-                  <Col md={6}>
-                    <Link href="#" className="tolak-btn about-one-img">
-                      <b>Book An Appointment</b>
-                      <span></span>
-                    </Link>
-                  </Col>
-                  {/* <Col lg={7}>
+                {path === "/" && (
+                  <>
+                    <div className="about-three__content__quote">
+                      {contQuote}
+                    </div>
+                    <Row>
+                      <Col md={6} className="faq-one__image">
+                        <Link href="/about" className="tolak-btn">
+                          <b>Discover More</b>
+                          <span></span>
+                        </Link>
+                      </Col>
+                      <Col md={6}>
+                        <Link href="tel:+919108636085" className="tolak-btn about-one-img">
+                          <b>Book An Appointment</b>
+                          <span></span>
+                        </Link>
+                      </Col>
+                      {/* <Col lg={7}>
                     <div className="about-three__content__author">
                       <div className="about-three__content__author__image">
                         <Image src={author} alt="tolak" />
@@ -189,7 +209,9 @@ const AboutThree = () => {
                       </p>
                     </div>
                   </Col> */}
-                </Row>
+                    </Row>
+                  </>
+                )}
               </div>
             </Col>
           </Row>

@@ -5,7 +5,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import { tabOneData } from "@/data/TabOneData";
 import Link from "next/link";
-const { tagLine, title, tabItems, tabContents } = tabOneData;
+
+const { tagLine, title, tabItems, tabContents, link } = tabOneData;
 const TabOne = () => {
   const [active, setActive] = useState(1);
 
@@ -38,80 +39,82 @@ const TabOne = () => {
           ))}
         </ul>
         <div className="tabs-content">
-          {tabContents.map(({ id, image, title, text, listItems, authors }) => (
-            <div
-              key={id}
-              className={`tab fadeInUp animated ${
-                active === id ? " active-tab" : ""
-              }`}
-            >
-              <Row>
-                <Col lg={6}>
-                  <div className="tab-one__thumb">
-                    <Image src={image} width={543} height={507} alt={title} />
-                  </div>
-                </Col>
-                <Col lg={6}>
-                  <div className="tab-one__content">
-                    <h3 className="tab-one__content__title">{title}</h3>
-                    <p
-                      className="tab-one__content__text"
-                      style={{ textAlign: "justify" }}
-                    >
-                      {text}
-                    </p>
-                    <ul className="tab-one__content__list">
-                      {listItems.map((item, index) => (
-                        <li key={index}>
-                          <i className="tolak-icons-two-arrow-circle-right"></i>
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <div className="cta-three__author">
-                      {authors.map((author, index) => (
-                        // <Image
-                        //   key={index}
-                        //   src={author}
-                        //   alt={`Author ${index + 1}`}
-                        // />
-                        <>
-                          <Link
-                            key={index}
-                            href="#"
-                            className="tolak-btn-two tolak-btn-two--home-six"
-                          >
-                            <span className="tolak-btn-two__left-star"></span>
-                            <span>
-                              View Profile
-                              <i className="tolak-icons-two-arrow-right-short"></i>
-                            </span>
-                            <span className="tolak-btn-two__right-star"></span>
-                          </Link>{" "}
-                          &ensp;
-                          <Link
-                            key={index}
-                            href="#"
-                            className="tolak-btn-two tolak-btn-two--home-six"
-                          >
-                            <span className="tolak-btn-two__left-star"></span>
-                            <span>
-                              Get Appointment
-                              <i className="tolak-icons-two-arrow-right-short"></i>
-                            </span>
-                            <span className="tolak-btn-two__right-star"></span>
-                          </Link>
-                        </>
-                      ))}
-                      {/* <Link className="cta-three__author__rm" href="contact">
+          {tabContents.map(
+            ({ id, image, title, text, listItems, authors, link }) => (
+              <div
+                key={id}
+                className={`tab fadeInUp animated ${
+                  active === id ? " active-tab" : ""
+                }`}
+              >
+                <Row>
+                  <Col lg={6}>
+                    <div className="tab-one__thumb">
+                      <Image src={image} width={543} height={507} alt={title} />
+                    </div>
+                  </Col>
+                  <Col lg={6}>
+                    <div className="tab-one__content">
+                      <h3 className="tab-one__content__title">{title}</h3>
+                      <p
+                        className="tab-one__content__text"
+                        style={{ textAlign: "justify" }}
+                      >
+                        {text}
+                      </p>
+                      <ul className="tab-one__content__list">
+                        {listItems.map((item, index) => (
+                          <li key={index}>
+                            <i className="tolak-icons-two-arrow-circle-right"></i>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      <div className="cta-three__author">
+                        {authors.map((author, index) => (
+                          // <Image
+                          //   key={index}
+                          //   src={author}
+                          //   alt={`Author ${index + 1}`}
+                          // />
+                          <>
+                            <Link
+                              key={index}
+                              href={link}
+                              className="tolak-btn-two tolak-btn-two--home-six"
+                            >
+                              <span className="tolak-btn-two__left-star"></span>
+                              <span>
+                                View Profile
+                                <i className="tolak-icons-two-arrow-right-short"></i>
+                              </span>
+                              <span className="tolak-btn-two__right-star"></span>
+                            </Link>{" "}
+                            &ensp;
+                            <Link
+                              key={index}
+                              href="tel:+919108636085"
+                              className="tolak-btn-two tolak-btn-two--home-six"
+                            >
+                              <span className="tolak-btn-two__left-star"></span>
+                              <span>
+                                Get Appointment
+                                <i className="tolak-icons-two-arrow-right-short"></i>
+                              </span>
+                              <span className="tolak-btn-two__right-star"></span>
+                            </Link>
+                          </>
+                        ))}
+                        {/* <Link className="cta-three__author__rm" href="contact">
                                                     More <span className="fas fa-arrow-right"></span>
                                                 </Link> */}
+                      </div>
                     </div>
-                  </div>
-                </Col>
-              </Row>
-            </div>
-          ))}
+                  </Col>
+                </Row>
+              </div>
+            )
+          )}
         </div>
       </Container>
     </section>

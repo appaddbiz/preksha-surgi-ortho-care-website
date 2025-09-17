@@ -5,7 +5,9 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 const { tagLine, title, title2, items } = serviceOneData;
 
-const ServiceOne = ({ titleTwo }) => {
+const ServiceOne = ({ titleTwo, limit }) => {
+  const displayedItems = limit ? items.slice(0, limit) : items;
+
   return (
     <section className="service-one" id="services">
       <Container>
@@ -42,7 +44,7 @@ const ServiceOne = ({ titleTwo }) => {
           </h3>
         </div>
         <Row className="gutter-y-30">
-          {items.map(({ id, image, title, icon, href, text }) => (
+          {displayedItems.map(({ id, image, title, icon, href, text }) => (
             <Col
               key={id}
               md={6}
@@ -79,12 +81,14 @@ const ServiceOne = ({ titleTwo }) => {
               </div>
             </Col>
           ))}
-          <Col md={12} style={{ textAlign: "center" }}>
-            <Link href="#" className="tolak-btn">
-              <b>View All Services</b>
-              <span></span>
-            </Link>
-          </Col>
+          {limit && (
+            <Col md={12} style={{ textAlign: "center" }}>
+              <Link href="/general-surgery" className="tolak-btn">
+                <b>View All Services</b>
+                <span></span>
+              </Link>
+            </Col>
+          )}
         </Row>
       </Container>
     </section>

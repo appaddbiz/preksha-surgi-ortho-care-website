@@ -24,7 +24,7 @@ const {
 
 const FooterTwo = ({ pageTitle }) => {
   return (
-    <footer className="main-footer-two "  style={{ backgroundColor:"#ecf2fc" }}>
+    <footer className="main-footer-two " style={{ backgroundColor: "#ecf2fc" }}>
       {/* <div
         className="main-footer-two__bg "
         // style={{ backgroundImage: `url(/home-images/footer-bg.jpg)` }}
@@ -40,13 +40,13 @@ const FooterTwo = ({ pageTitle }) => {
           <Col md={6} lg={4}>
             <div className="footer-widget footer-widget--about-two">
               <a href="/" className="footer-widget__logo">
-              <Image
-                src={"/banners/Preksha Logo.png"}
-                alt="Preksha"
-                width={220}
-                height={55}
-                style={{ height: "auto" }}
-              />
+                <Image
+                  src={"/logo/Preksha Logo.png"}
+                  alt="Preksha"
+                  width={220}
+                  height={55}
+                  style={{ height: "auto" }}
+                />
               </a>
               <p className="footer-widget--about-two__text">{widgetText}</p>
               {/* <div className="footer-widget__social">

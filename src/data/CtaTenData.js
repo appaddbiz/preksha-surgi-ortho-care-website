@@ -18,7 +18,7 @@ const ctaTenData = {
     },
   },
   button: {
-    href: "#appointment",
+    href: "tel:+919108636085",
     text: "Book An Appointment",
     icon: "tolak-icons-two-arrow-right-short",
   },

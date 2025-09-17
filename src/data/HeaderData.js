@@ -13,7 +13,13 @@ import {
   faFacebookF,
   faPinterestP,
 } from "@fortawesome/free-brands-svg-icons";
-import { faMapMarkerAlt, faEnvelope, faPhoneAlt, faPhoneFlip, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMapMarkerAlt,
+  faEnvelope,
+  faPhoneAlt,
+  faPhoneFlip,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 
 const sidebarOneText =
   "Mauris ut enim sit amet lacus ornare ullamcor. Praesent placerat nequ puru rhoncu tincidunt odio ultrices.Sed feugiat feugiat felis.";
@@ -90,12 +96,12 @@ const navItems = [
   {
     id: 2,
     name: "About",
-    href: "#",
+    href: "/about",
   },
   {
     id: 3,
     name: "Doctors",
-    href: "#",
+    href: "/our-doctors",
   },
   {
     id: 4,
@@ -105,58 +111,58 @@ const navItems = [
       {
         id: 1,
         name: "General surgery",
-        href: "#",
+        href: "/general-surgery",
         dropdown: true,
         subItems: [
           {
             id: 1,
             name: "Endoscopy / colonoscopy",
-            href: "#",
+            href: "/general-surgery/endoscopy-colonoscopy",
           },
           {
             id: 2,
             name: "Laparoscopic surgeries",
-            href: "#",
+            href: "/general-surgery/laparoscopic-surgeries",
           },
           {
             id: 3,
             name: "Gall bladder surgery",
-            href: "#",
+            href: "/general-surgery/gall-bladder-surgery",
           },
           {
             id: 4,
             name: "Hernia",
-            href: "#",
+            href: "/general-surgery/hernia",
           },
           {
             id: 5,
             name: "Appendix",
-            href: "#",
+            href: "/general-surgery/appendix",
           },
           {
             id: 6,
             name: "Gastrointestinal Surgery",
-            href: "#",
+            href: "/general-surgery/gastrointestinal-surgery",
           },
           {
             id: 7,
             name: "Breast Lumps",
-            href: "#",
+            href: "/general-surgery/breast-lumps",
           },
           {
             id: 8,
             name: "Piles/Fistula in Ano/Fissures",
-            href: "#",
+            href: "/general-surgery/piles-fistula-fissures",
           },
           {
             id: 9,
             name: "Lipoma/Sabeceous cyst/Abscess",
-            href: "#",
+            href: "/general-surgery/lipoma-cyst-abscess",
           },
           {
             id: 10,
             name: "Diabetic foot ulcer",
-            href: "#",
+            href: "/general-surgery/diabetic-foot-ulcer",
           },
         ],
       },
@@ -203,74 +209,130 @@ const navItems = [
   {
     id: 5,
     name: "Orthopaedics",
-    href: "#",
+    href: "/orthopaedics",
     dropdown: false,
     subNavItems: [
       {
         id: 1,
         name: "Fracture and Trauma Surgery",
-        href: "#",
+        href: "/orthopaedics/fracture-trauma-surgery",
         dropdown: true,
         subItems: [
-          { id: 1, name: "Shoulder Dislocation Treatment", href: "#" },
-          { id: 2, name: "Elbow Dislocation Treatment", href: "#" },
+          {
+            id: 1,
+            name: "Shoulder Dislocation Treatment",
+            href: "/orthopaedics/shoulder-dislocation-treatment",
+          },
+          {
+            id: 2,
+            name: "Elbow Dislocation Treatment",
+            href: "/orthopaedics/elbow-dislocation-treatment",
+          },
         ],
       },
-      { id: 2, name: "Arthritis / Osteoarthritis / Joint Pains", href: "#" },
+      {
+        id: 2,
+        name: "Arthritis / Osteoarthritis / Joint Pains",
+        href: "/orthopaedics/arthritis-osteoarthritis-joint-pains",
+      },
       {
         id: 3,
         name: "Arthroplasty / Joint Replacement",
-        href: "#",
+        href: "/orthopaedics/arthroplasty-joint-replacement",
         dropdown: true,
         subItems: [
-          { id: 1, name: "Hemi Arthroplasty", href: "#" },
-          { id: 2, name: "Total Hip Replacement", href: "#" },
-          { id: 3, name: "Total Knee Replacement", href: "#" },
+          {
+            id: 1,
+            name: "Hemi Arthroplasty",
+            href: "/orthopaedics/hemi-arthroplasty",
+          },
+          {
+            id: 2,
+            name: "Total Hip Replacement",
+            href: "/orthopaedics/total-hip-replacement",
+          },
+          {
+            id: 3,
+            name: "Total Knee Replacement",
+            href: "/orthopaedics/total-knee-replacement",
+          },
         ],
       },
       {
         id: 4,
         name: "Arthroscopy",
-        href: "#",
+        href: "/orthopaedics/arthroscopy",
         dropdown: true,
         subItems: [
-          { id: 1, name: "Arthroscopic ACL Reconstruction", href: "#" },
-          { id: 2, name: "PCL Reconstruction", href: "#" },
-          { id: 3, name: "Arthroscopic Rotator Cuff Surgery", href: "#" },
+          {
+            id: 1,
+            name: "Arthroscopic ACL Reconstruction",
+            href: "/orthopaedics/arthroscopic-acl-reconstruction",
+          },
+          {
+            id: 2,
+            name: "PCL Reconstruction",
+            href: "/orthopaedics/pcl-reconstruction",
+          },
+          {
+            id: 3,
+            name: "Arthroscopic Rotator Cuff Surgery",
+            href: "/orthopaedics/arthroscopic-rotator-cuff-surgery",
+          },
           {
             id: 4,
             name: "Recurrent Shoulder Dislocation Treatment",
-            href: "#",
+            href: "/orthopaedics/recurrent-shoulder-dislocation-treatment",
           },
           {
             id: 5,
             name: "Recurrent Patellar Dislocation Treatment",
-            href: "#",
+            href: "/orthopaedics/recurrent-patellar-dislocation-treatment",
           },
         ],
       },
       {
         id: 5,
         name: "Sports Injuries",
-        href: "#",
+        href: "/orthopaedics/sports-injuries",
         dropdown: true,
         subItems: [
-          { id: 1, name: "Ligament Repair", href: "#" },
-          { id: 2, name: "Tendon Repair", href: "#" },
+          {
+            id: 1,
+            name: "Ligament Repair",
+            href: "/orthopaedics/ligament-repair",
+          },
+          { id: 2, name: "Tendon Repair", href: "/orthopaedics/tendon-repair" },
         ],
       },
       {
         id: 6,
         name: "Spine Care",
-        href: "#",
+        href: "/orthopaedics/spine-care",
         dropdown: true,
         subItems: [
-          { id: 1, name: "Cervical Spondylosis", href: "#" },
-          { id: 2, name: "Lumbar Spondylosis", href: "#" },
-          { id: 3, name: "Lower Back Pain", href: "#" },
+          {
+            id: 1,
+            name: "Cervical Spondylosis",
+            href: "/orthopaedics/cervical-spondylosis",
+          },
+          {
+            id: 2,
+            name: "Lumbar Spondylosis",
+            href: "/orthopaedics/lumbar-spondylosis",
+          },
+          {
+            id: 3,
+            name: "Lower Back Pain",
+            href: "/orthopaedics/lower-back-pain",
+          },
         ],
       },
-      { id: 7, name: "Soft Tissue Injury Management", href: "#" },
+      {
+        id: 7,
+        name: "Soft Tissue Injury Management",
+        href: "/orthopaedics/soft-tissue-injury-management",
+      },
     ],
   },
   // {
@@ -405,7 +467,7 @@ const navItems = [
   {
     id: 6,
     name: "Gallery",
-    href: "#",
+    href: "/our-gallery",
   },
   {
     id: 6,
@@ -415,7 +477,7 @@ const navItems = [
   {
     id: 6,
     name: "Contact",
-    href: "#",
+    href: "/contact",
   },
 ];
 
@@ -482,13 +544,14 @@ const headerData = {
     {
       id: 1,
       icon: faEnvelope,
-      content: "drshashank679@gmail.com",
-      subHref: "mailto:drshashank679@gmail.com",
+      content: "ps.surgiandorthocare@gmail.com",
+      subHref: "mailto:ps.surgiandorthocare@gmail.com",
     },
     {
       id: 2,
       icon: faMapMarkerAlt,
-      content: "412, 1st Main Rd, Happy Valley Layout, Subramanyapura, Bengaluru, Karnataka 560061",
+      content:
+        "412, 1st Main Rd, Happy Valley Layout, Subramanyapura, Bengaluru, Karnataka 560061",
       href: "https://maps.app.goo.gl/6a88KkC65curQKQ9A",
     },
     {

@@ -27,7 +27,7 @@ const MobileNav = () => {
         <div className="logo-box">
           <Link href="/">
             <Image
-              src={"/banners/Preksha Logo.png"}
+              src={"/logo/Preksha Logo.png"}
               alt="Preksha"
               width={220}
               height={55}
@@ -48,7 +48,9 @@ const MobileNav = () => {
         <ul className="mobile-nav__contact list-unstyled">
           <li>
             <i className="fa fa-envelope"></i>
-            <a href="mailto:drshashank679@gmail.com">drshashank679@gmail.com</a>
+            <a href="mailto:ps.surgiandorthocare@gmail.com">
+              ps.surgiandorthocare@gmail.com
+            </a>
           </li>
           <li>
             <i className="fa fa-phone-alt"></i>

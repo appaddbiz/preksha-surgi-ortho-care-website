@@ -3,15 +3,16 @@ import { filterCategories, galleryFilterData } from "@/data/GalleryFilterData";
 import Image from "next/image";
 import React, { useState } from "react";
 import { Col, Container } from "react-bootstrap";
-import { ResponsiveMasonry, Masonry } from "react-responsive-masonry";
-
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import GalleryModal from "../GalleryModal/GalleryModal";
+
 const getFilteredProjects = (filterData) =>
   filterData === "filter-item"
     ? galleryFilterData
     : galleryFilterData.filter((project) =>
         project.filterCategory.includes(filterData)
       );
+
 const GalleryFilter = () => {
   const [currentIndex, setCurrentIndex] = useState(null);
   const [clickedImg, setClickedImg] = useState(null);
