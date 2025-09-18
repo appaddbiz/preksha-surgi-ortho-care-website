@@ -1844,7 +1844,7 @@ export const serviceDetailsData = [
         id: 2,
         items: [
           "Comprehensive rehabilitation and physiotherapy",
-          "24/7 trauma and orthopaedic care",
+          // "24/7 trauma and orthopaedic care",
         ],
       },
     ],

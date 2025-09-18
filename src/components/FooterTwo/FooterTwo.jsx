@@ -37,7 +37,7 @@ const FooterTwo = ({ pageTitle }) => {
       ></div> */}
       <Container>
         <Row>
-          <Col md={6} lg={4}>
+          <Col md={6} lg={5}>
             <div className="footer-widget footer-widget--about-two">
               <a href="/" className="footer-widget__logo">
                 <Image
@@ -74,7 +74,7 @@ const FooterTwo = ({ pageTitle }) => {
               </div>
             </div>
           </Col>
-          <Col md={6} lg={3}>
+          {/* <Col md={6} lg={3}>
             <div className="footer-widget footer-widget--links">
               <h2 className="footer-widget__title">General Services</h2>
               <ul className="list-unstyled footer-widget__links">
@@ -85,8 +85,8 @@ const FooterTwo = ({ pageTitle }) => {
                 ))}
               </ul>
             </div>
-          </Col>
-          <Col md={6} lg={2}>
+          </Col> */}
+          <Col md={6} lg={3}>
             <div className="footer-widget footer-widget--links main-footer-two--ml30">
               <h2 className="footer-widget__title">Quick Links</h2>
               <ul className="list-unstyled footer-widget__links">
@@ -98,7 +98,7 @@ const FooterTwo = ({ pageTitle }) => {
               </ul>
             </div>
           </Col>
-          <Col md={6} lg={3}>
+          <Col md={6} lg={4}>
             <div className="footer-widget footer-widget--posts">
               <h2 className="footer-widget__title">Locate Us</h2>
               <iframe
