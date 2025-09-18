@@ -193,7 +193,10 @@ const AboutThree = () => {
                         </Link>
                       </Col>
                       <Col md={6}>
-                        <Link href="tel:+919108636085" className="tolak-btn about-one-img">
+                        <Link
+                          href="tel:+919108636085"
+                          className="tolak-btn about-one-img"
+                        >
                           <b>Book An Appointment</b>
                           <span></span>
                         </Link>

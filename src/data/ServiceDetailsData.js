@@ -108,6 +108,11 @@ export const serviceDetailsData = [
           name: "Varicose Veins",
           href: "/general-surgery/varicose-veins-treatment",
         },
+        {
+          id: 12,
+          name: "Thyroid Surgery",
+          href: "/general-surgery/thyroid-surgery",
+        },
       ],
       teamOneData: {
         tagLine: "Our Doctor",
@@ -277,6 +282,11 @@ export const serviceDetailsData = [
           name: "Varicose Veins",
           href: "/general-surgery/varicose-veins-treatment",
         },
+        {
+          id: 12,
+          name: "Thyroid Surgery",
+          href: "/general-surgery/thyroid-surgery",
+        },
       ],
       teamOneData: {
         tagLine: "Our Doctor",
@@ -393,6 +403,180 @@ export const serviceDetailsData = [
       "With advanced technology, skilled surgeons, and a patient-focused approach, we provide effective varicose vein treatments ensuring safety, comfort, and optimal results. Trust us for comprehensive care and guidance on your journey to healthier veins.",
   },
   {
+    id: 3,
+    link: "/general-surgery/thyroid-surgery",
+    heading: "Thyroid Surgery",
+    headingTitle: "General Surgery",
+    subHeadingTitle: "Thyroid Surgery",
+    subHeading: "Advanced Thyroid Care at Preksha Surgi & Ortho Care",
+    thumbnailImage: "/services/Thyroid-Surgery.jpeg",
+    sidebar: {
+      title: "All Services:",
+      navItems: [
+        {
+          id: 1,
+          name: "Endoscopy / Colonoscopy",
+          href: "/general-surgery/endoscopy-colonoscopy",
+        },
+        {
+          id: 2,
+          name: "Laparoscopic Surgeries",
+          href: "/general-surgery/laparoscopic-surgeries",
+        },
+        {
+          id: 3,
+          name: "Gall Bladder Surgery",
+          href: "/general-surgery/gall-bladder-surgery",
+        },
+        { id: 4, name: "Hernia", href: "/general-surgery/hernia" },
+        { id: 5, name: "Appendix", href: "/general-surgery/appendix" },
+        {
+          id: 6,
+          name: "Gastrointestinal Surgery",
+          href: "/general-surgery/gastrointestinal-surgery",
+        },
+        { id: 7, name: "Breast Lumps", href: "/general-surgery/breast-lumps" },
+        {
+          id: 8,
+          name: "Piles / Fistula / Fissures",
+          href: "/general-surgery/piles-fistula-fissures",
+        },
+        {
+          id: 9,
+          name: "Lipoma / Sebaceous Cyst / Abscess",
+          href: "/general-surgery/lipoma-cyst-abscess",
+        },
+        {
+          id: 10,
+          name: "Diabetic Foot Ulcer",
+          href: "/general-surgery/diabetic-foot-ulcer",
+        },
+        {
+          id: 11,
+          name: "Varicose Veins",
+          href: "/general-surgery/varicose-veins-treatment",
+        },
+        {
+          id: 12,
+          name: "Thyroid Surgery",
+          href: "/general-surgery/thyroid-surgery",
+        },
+      ],
+      teamOneData: {
+        tagLine: "Our Doctor",
+        title: "General Surgery",
+        title2: "Meet The Team",
+        carouselData: [
+          {
+            id: 1,
+            image: "/doctors/Dr-Prerana.jpg",
+            socials: [
+              {
+                id: 1,
+                icon: faFacebookF,
+                link: "https://facebook.com",
+                name: "Facebook",
+              },
+              {
+                id: 2,
+                icon: faPinterestP,
+                link: "https://pinterest.com",
+                name: "Pinterest",
+              },
+              {
+                id: 3,
+                icon: faTwitter,
+                link: "https://twitter.com",
+                name: "Twitter",
+              },
+              {
+                id: 4,
+                icon: faInstagram,
+                link: "https://instagram.com",
+                name: "Instagram",
+              },
+            ],
+            title: "Dr. Prerana R T",
+            href: "/our-doctors/dr-prerana-r-t",
+            designation: "General and Laparoscopic Surgeon",
+          },
+        ],
+      },
+    },
+    content: [
+      {
+        title: "What is Thyroid Surgery?",
+        description:
+          "Thyroid surgery involves the removal of all or part of the thyroid gland. It is performed to treat thyroid nodules, goiter, hyperthyroidism, or thyroid cancer. The procedure is safe, precise, and tailored to each patient’s condition.",
+      },
+      {
+        title: "Why Choose Thyroid Surgery?",
+        description:
+          "At Preksha Surgi & Ortho Care, we provide advanced thyroid surgery with minimal scarring and faster recovery. Surgery is recommended for suspicious nodules, symptomatic goiter, cancer, or hyperthyroidism not controlled with medication.",
+      },
+      {
+        title: "Benefits of Thyroid Surgery",
+        description:
+          "Surgery effectively removes diseased thyroid tissue, alleviates symptoms like swelling or pressure, prevents cancer progression, and restores normal hormone function. Modern techniques ensure faster recovery and minimal complications.",
+      },
+      {
+        title: "Our Expertise & Technology",
+        description:
+          "Our surgeons use advanced operative techniques, including minimally invasive approaches, intraoperative nerve monitoring, and high-precision surgical instruments to ensure safety and optimal outcomes.",
+      },
+      {
+        title: "Patient-Centered Care",
+        description:
+          "From pre-surgery evaluation to post-operative care, our team prioritizes patient comfort, education, and safety. We provide clear guidance, personalized treatment plans, and continuous support throughout the recovery process.",
+      },
+      {
+        title: "Comprehensive Solutions for Thyroid Health",
+        description:
+          "We offer diagnosis, surgical intervention, and follow-up care for various thyroid conditions. Timely intervention ensures better outcomes, reduces risks, and helps maintain long-term thyroid health.",
+      },
+      {
+        title: "Why Trust Preksha Surgi & Ortho Care?",
+        description:
+          "With experienced surgeons, advanced technology, and a patient-first approach, our center delivers safe and effective thyroid surgery. You can rely on us for precise treatment, attentive care, and ongoing support.",
+      },
+    ],
+    skills: [
+      {
+        id: 1,
+        title: "Surgical Precision",
+        text: "Minimally invasive and open techniques",
+        percentage: 95,
+      },
+      {
+        id: 2,
+        title: "Patient Care",
+        text: "Comprehensive pre- and post-operative support",
+        percentage: 90,
+      },
+    ],
+    lists: [
+      {
+        id: 1,
+        items: [
+          "Safe and precise procedures",
+          "Effective treatment for thyroid disorders",
+        ],
+      },
+      {
+        id: 2,
+        items: [
+          "Minimally invasive surgery options",
+          "Faster recovery with expert care",
+        ],
+      },
+    ],
+    solutionText:
+      "Our thyroid surgery services provide safe, precise, and effective solutions for thyroid disorders. With expert care and modern technology, patients achieve optimal health outcomes and improved quality of life.",
+    contentImage: "/services/thyroidContent.jpg",
+    lastText:
+      "With advanced surgical techniques, skilled surgeons, and a patient-focused approach, we provide safe and effective thyroid surgery. Trust us for comprehensive care, guidance, and optimal thyroid health.",
+  },
+  {
     id: 2,
     link: "/general-surgery/laparoscopic-surgeries",
     heading: "Laparoscopic Surgeries",
@@ -445,6 +629,11 @@ export const serviceDetailsData = [
           id: 11,
           name: "Varicose Veins",
           href: "/general-surgery/varicose-veins-treatment",
+        },
+        {
+          id: 12,
+          name: "Thyroid Surgery",
+          href: "/general-surgery/thyroid-surgery",
         },
       ],
       teamOneData: {
@@ -615,6 +804,11 @@ export const serviceDetailsData = [
           name: "Varicose Veins",
           href: "/general-surgery/varicose-veins-treatment",
         },
+        {
+          id: 12,
+          name: "Thyroid Surgery",
+          href: "/general-surgery/thyroid-surgery",
+        },
       ],
       teamOneData: {
         tagLine: "Our Doctor",
@@ -783,6 +977,11 @@ export const serviceDetailsData = [
           id: 11,
           name: "Varicose Veins",
           href: "/general-surgery/varicose-veins-treatment",
+        },
+        {
+          id: 12,
+          name: "Thyroid Surgery",
+          href: "/general-surgery/thyroid-surgery",
         },
       ],
       teamOneData: {
@@ -954,6 +1153,11 @@ export const serviceDetailsData = [
           name: "Varicose Veins",
           href: "/general-surgery/varicose-veins-treatment",
         },
+        {
+          id: 12,
+          name: "Thyroid Surgery",
+          href: "/general-surgery/thyroid-surgery",
+        },
       ],
       teamOneData: {
         tagLine: "Our Doctor",
@@ -1123,6 +1327,11 @@ export const serviceDetailsData = [
           id: 11,
           name: "Varicose Veins",
           href: "/general-surgery/varicose-veins-treatment",
+        },
+        {
+          id: 12,
+          name: "Thyroid Surgery",
+          href: "/general-surgery/thyroid-surgery",
         },
       ],
       teamOneData: {
@@ -1294,6 +1503,11 @@ export const serviceDetailsData = [
           name: "Varicose Veins",
           href: "/general-surgery/varicose-veins-treatment",
         },
+        {
+          id: 12,
+          name: "Thyroid Surgery",
+          href: "/general-surgery/thyroid-surgery",
+        },
       ],
       teamOneData: {
         tagLine: "Our Doctor",
@@ -1462,6 +1676,11 @@ export const serviceDetailsData = [
           id: 11,
           name: "Varicose Veins",
           href: "/general-surgery/varicose-veins-treatment",
+        },
+        {
+          id: 12,
+          name: "Thyroid Surgery",
+          href: "/general-surgery/thyroid-surgery",
         },
       ],
       teamOneData: {
@@ -1632,6 +1851,11 @@ export const serviceDetailsData = [
           name: "Varicose Veins",
           href: "/general-surgery/varicose-veins-treatment",
         },
+        {
+          id: 12,
+          name: "Thyroid Surgery",
+          href: "/general-surgery/thyroid-surgery",
+        },
       ],
       teamOneData: {
         tagLine: "Our Doctor",
@@ -1800,6 +2024,11 @@ export const serviceDetailsData = [
           id: 11,
           name: "Varicose Veins",
           href: "/general-surgery/varicose-veins-treatment",
+        },
+        {
+          id: 12,
+          name: "Thyroid Surgery",
+          href: "/general-surgery/thyroid-surgery",
         },
       ],
       teamOneData: {
