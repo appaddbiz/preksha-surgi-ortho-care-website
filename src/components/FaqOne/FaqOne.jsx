@@ -62,7 +62,7 @@ const FaqOne = () => {
                     onExit={() => setCounterOn(false)}
                   >
                     <div className="faq-one__right">
-                      <div className="faq-one__experiance count-box">
+                      {/* <div className="faq-one__experiance count-box">
                         <h3 className="faq-one__experiance__count">
                           {counterOn && (
                             <CountUp
@@ -81,7 +81,7 @@ const FaqOne = () => {
                             </Fragment>
                           ))}
                         </h5>
-                      </div>
+                      </div> */}
                       <h4 className="faq-one__right__title">{rightTitle}</h4>
                       <p className="faq-one__right__text">{text}</p>
                     </div>

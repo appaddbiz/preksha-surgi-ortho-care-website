@@ -17,7 +17,7 @@ const aboutThreeData = {
   factCount: 1283,
   percentage: 45,
   tagLine: "About Preksha Surgi & Ortho Care",
-  title: "Healing with Expertise, Care, and Compassion.",
+  title: "Where Expertise Meets Empathy and Care.",
   text: "At Preksha Surgi & Ortho Care, we are dedicated to providing advanced, reliable, and patient-centered surgical and orthopaedic care under one roof. Our center brings together expertise, modern technology, and compassionate treatment to ensure the best outcomes for every patient.",
   text2:
     "We specialize in both General Surgery and Orthopaedics, offering a wide range of treatments from minimally invasive laparoscopic procedures to advanced joint replacement and arthroscopy surgeries. Whether it’s managing day-to-day health concerns, complex surgical conditions, or restoring mobility through orthopaedic solutions, our team is here to support you with precision and care.",

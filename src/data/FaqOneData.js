@@ -8,7 +8,7 @@ const faqOneData = {
   tagLine: "Patient FAQs",
   expTitle: "Years \n Experience",
   rightTitle: "Your Questions, Our Answers",
-  text: "Here are some of the most common questions our patients ask about our surgical and orthopaedic services.",
+  text: "These are the most frequently asked questions by our patients regarding our surgical and orthopaedic services, helping you understand treatments, procedures, recovery, and expert care offered at our hospital.",
   count: 36,
   accordionData: [
     {
