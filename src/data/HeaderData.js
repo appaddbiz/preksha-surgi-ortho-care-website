@@ -105,8 +105,8 @@ const navItems = [
   },
   {
     id: 4,
-    name: "Services",
-    href: "#",
+    name: "Our Services",
+    href: "/our-services",
     subNavItems: [
       {
         id: 1,
@@ -166,175 +166,270 @@ const navItems = [
           },
         ],
       },
-      // { id: 2, name: "Our Team", href: "/team" },
-      // { id: 3, name: "Team Carousel", href: "/team-carousel" },
-      // { id: 4, name: "Team Details", href: "/team-details" },
-      // { id: 5, name: "Testimonial", href: "/reviews" },
-      // { id: 6, name: "Testimonial Carousel", href: "/reviews-carousel" },
-      // { id: 7, name: "Pricing Page", href: "/packages" },
-      // { id: 8, name: "Pricing Carousel", href: "/packages-carousel" },
-      // {
-      //   id: 9,
-      //   name: "Gallery",
-      //   href: "/gallery",
-      //   dropdown: false,
-      //   subItems: [
-      //     {
-      //       id: 1,
-      //       name: "Gallery Masonry",
-      //       href: "/gallery",
-      //     },
-      //     {
-      //       id: 2,
-      //       name: "Gallery Filter",
-      //       href: "/gallery-filter",
-      //     },
-      //     {
-      //       id: 3,
-      //       name: "Gallery Grid",
-      //       href: "/gallery-grid",
-      //     },
-      //     {
-      //       id: 4,
-      //       name: "Gallery Carousel",
-      //       href: "/gallery-carousel",
-      //     },
-      //   ],
-      // },
-      // { id: 10, name: "FAQs", href: "/faq" },
-      // { id: 11, name: "Login", href: "/login" },
-      // { id: 12, name: "404 Error", href: "/404" },
-    ],
-  },
-  {
-    id: 5,
-    name: "Orthopaedics",
-    href: "/orthopaedics",
-    dropdown: false,
-    subNavItems: [
-      {
-        id: 1,
-        name: "Fracture and Trauma Surgery",
-        href: "/orthopaedics/fracture-trauma-surgery",
-        dropdown: true,
-        subItems: [
-          {
-            id: 1,
-            name: "Shoulder Dislocation Treatment",
-            href: "/orthopaedics/shoulder-dislocation-treatment",
-          },
-          {
-            id: 2,
-            name: "Elbow Dislocation Treatment",
-            href: "/orthopaedics/elbow-dislocation-treatment",
-          },
-        ],
-      },
       {
         id: 2,
-        name: "Arthritis / Osteoarthritis / Joint Pains",
-        href: "/orthopaedics/arthritis-osteoarthritis-joint-pains",
-      },
-      {
-        id: 3,
-        name: "Arthroplasty / Joint Replacement",
-        href: "/orthopaedics/arthroplasty-joint-replacement",
+        name: "Orthopaedics",
+        href: "/orthopaedics",
         dropdown: true,
         subItems: [
           {
             id: 1,
-            name: "Hemi Arthroplasty",
-            href: "/orthopaedics/hemi-arthroplasty",
+            name: "Fracture and Trauma Surgery",
+            href: "/orthopaedics/fracture-trauma-surgery",
+            dropdown: true,
+            subItems: [
+              {
+                id: 1,
+                name: "Shoulder Dislocation Treatment",
+                href: "/orthopaedics/shoulder-dislocation-treatment",
+              },
+              {
+                id: 2,
+                name: "Elbow Dislocation Treatment",
+                href: "/orthopaedics/elbow-dislocation-treatment",
+              },
+            ],
           },
           {
             id: 2,
-            name: "Total Hip Replacement",
-            href: "/orthopaedics/total-hip-replacement",
+            name: "Arthritis / Osteoarthritis / Joint Pains",
+            href: "/orthopaedics/arthritis-osteoarthritis-joint-pains",
           },
           {
             id: 3,
-            name: "Total Knee Replacement",
-            href: "/orthopaedics/total-knee-replacement",
-          },
-        ],
-      },
-      {
-        id: 4,
-        name: "Arthroscopy",
-        href: "/orthopaedics/arthroscopy",
-        dropdown: true,
-        subItems: [
-          {
-            id: 1,
-            name: "Arthroscopic ACL Reconstruction",
-            href: "/orthopaedics/arthroscopic-acl-reconstruction",
-          },
-          {
-            id: 2,
-            name: "PCL Reconstruction",
-            href: "/orthopaedics/pcl-reconstruction",
-          },
-          {
-            id: 3,
-            name: "Arthroscopic Rotator Cuff Surgery",
-            href: "/orthopaedics/arthroscopic-rotator-cuff-surgery",
+            name: "Arthroplasty / Joint Replacement",
+            href: "/orthopaedics/arthroplasty-joint-replacement",
+            dropdown: true,
+            subItems: [
+              {
+                id: 1,
+                name: "Hemi Arthroplasty",
+                href: "/orthopaedics/hemi-arthroplasty",
+              },
+              {
+                id: 2,
+                name: "Total Hip Replacement",
+                href: "/orthopaedics/total-hip-replacement",
+              },
+              {
+                id: 3,
+                name: "Total Knee Replacement",
+                href: "/orthopaedics/total-knee-replacement",
+              },
+            ],
           },
           {
             id: 4,
-            name: "Recurrent Shoulder Dislocation Treatment",
-            href: "/orthopaedics/recurrent-shoulder-dislocation-treatment",
+            name: "Arthroscopy",
+            href: "/orthopaedics/arthroscopy",
+            dropdown: true,
+            subItems: [
+              {
+                id: 1,
+                name: "Arthroscopic ACL Reconstruction",
+                href: "/orthopaedics/arthroscopic-acl-reconstruction",
+              },
+              {
+                id: 2,
+                name: "PCL Reconstruction",
+                href: "/orthopaedics/pcl-reconstruction",
+              },
+              {
+                id: 3,
+                name: "Arthroscopic Rotator Cuff Surgery",
+                href: "/orthopaedics/arthroscopic-rotator-cuff-surgery",
+              },
+              {
+                id: 4,
+                name: "Recurrent Shoulder Dislocation Treatment",
+                href: "/orthopaedics/recurrent-shoulder-dislocation-treatment",
+              },
+              {
+                id: 5,
+                name: "Recurrent Patellar Dislocation Treatment",
+                href: "/orthopaedics/recurrent-patellar-dislocation-treatment",
+              },
+            ],
           },
           {
             id: 5,
-            name: "Recurrent Patellar Dislocation Treatment",
-            href: "/orthopaedics/recurrent-patellar-dislocation-treatment",
+            name: "Sports Injuries",
+            href: "/orthopaedics/sports-injuries",
+            dropdown: true,
+            subItems: [
+              {
+                id: 1,
+                name: "Ligament Repair",
+                href: "/orthopaedics/ligament-repair",
+              },
+              {
+                id: 2,
+                name: "Tendon Repair",
+                href: "/orthopaedics/tendon-repair",
+              },
+            ],
+          },
+          {
+            id: 6,
+            name: "Spine Care",
+            href: "/orthopaedics/spine-care",
+            dropdown: true,
+            subItems: [
+              {
+                id: 1,
+                name: "Cervical Spondylosis",
+                href: "/orthopaedics/cervical-spondylosis",
+              },
+              {
+                id: 2,
+                name: "Lumbar Spondylosis",
+                href: "/orthopaedics/lumbar-spondylosis",
+              },
+              {
+                id: 3,
+                name: "Lower Back Pain",
+                href: "/orthopaedics/lower-back-pain",
+              },
+            ],
+          },
+          {
+            id: 7,
+            name: "Soft Tissue Injury Management",
+            href: "/orthopaedics/soft-tissue-injury-management",
           },
         ],
-      },
-      {
-        id: 5,
-        name: "Sports Injuries",
-        href: "/orthopaedics/sports-injuries",
-        dropdown: true,
-        subItems: [
-          {
-            id: 1,
-            name: "Ligament Repair",
-            href: "/orthopaedics/ligament-repair",
-          },
-          { id: 2, name: "Tendon Repair", href: "/orthopaedics/tendon-repair" },
-        ],
-      },
-      {
-        id: 6,
-        name: "Spine Care",
-        href: "/orthopaedics/spine-care",
-        dropdown: true,
-        subItems: [
-          {
-            id: 1,
-            name: "Cervical Spondylosis",
-            href: "/orthopaedics/cervical-spondylosis",
-          },
-          {
-            id: 2,
-            name: "Lumbar Spondylosis",
-            href: "/orthopaedics/lumbar-spondylosis",
-          },
-          {
-            id: 3,
-            name: "Lower Back Pain",
-            href: "/orthopaedics/lower-back-pain",
-          },
-        ],
-      },
-      {
-        id: 7,
-        name: "Soft Tissue Injury Management",
-        href: "/orthopaedics/soft-tissue-injury-management",
       },
     ],
   },
+  // {
+  //   id: 5,
+  //   name: "Orthopaedics",
+  //   href: "/orthopaedics",
+  //   dropdown: false,
+  //   subNavItems: [
+  //     {
+  //       id: 1,
+  //       name: "Fracture and Trauma Surgery",
+  //       href: "/orthopaedics/fracture-trauma-surgery",
+  //       dropdown: true,
+  //       subItems: [
+  //         {
+  //           id: 1,
+  //           name: "Shoulder Dislocation Treatment",
+  //           href: "/orthopaedics/shoulder-dislocation-treatment",
+  //         },
+  //         {
+  //           id: 2,
+  //           name: "Elbow Dislocation Treatment",
+  //           href: "/orthopaedics/elbow-dislocation-treatment",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Arthritis / Osteoarthritis / Joint Pains",
+  //       href: "/orthopaedics/arthritis-osteoarthritis-joint-pains",
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "Arthroplasty / Joint Replacement",
+  //       href: "/orthopaedics/arthroplasty-joint-replacement",
+  //       dropdown: true,
+  //       subItems: [
+  //         {
+  //           id: 1,
+  //           name: "Hemi Arthroplasty",
+  //           href: "/orthopaedics/hemi-arthroplasty",
+  //         },
+  //         {
+  //           id: 2,
+  //           name: "Total Hip Replacement",
+  //           href: "/orthopaedics/total-hip-replacement",
+  //         },
+  //         {
+  //           id: 3,
+  //           name: "Total Knee Replacement",
+  //           href: "/orthopaedics/total-knee-replacement",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       id: 4,
+  //       name: "Arthroscopy",
+  //       href: "/orthopaedics/arthroscopy",
+  //       dropdown: true,
+  //       subItems: [
+  //         {
+  //           id: 1,
+  //           name: "Arthroscopic ACL Reconstruction",
+  //           href: "/orthopaedics/arthroscopic-acl-reconstruction",
+  //         },
+  //         {
+  //           id: 2,
+  //           name: "PCL Reconstruction",
+  //           href: "/orthopaedics/pcl-reconstruction",
+  //         },
+  //         {
+  //           id: 3,
+  //           name: "Arthroscopic Rotator Cuff Surgery",
+  //           href: "/orthopaedics/arthroscopic-rotator-cuff-surgery",
+  //         },
+  //         {
+  //           id: 4,
+  //           name: "Recurrent Shoulder Dislocation Treatment",
+  //           href: "/orthopaedics/recurrent-shoulder-dislocation-treatment",
+  //         },
+  //         {
+  //           id: 5,
+  //           name: "Recurrent Patellar Dislocation Treatment",
+  //           href: "/orthopaedics/recurrent-patellar-dislocation-treatment",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       id: 5,
+  //       name: "Sports Injuries",
+  //       href: "/orthopaedics/sports-injuries",
+  //       dropdown: true,
+  //       subItems: [
+  //         {
+  //           id: 1,
+  //           name: "Ligament Repair",
+  //           href: "/orthopaedics/ligament-repair",
+  //         },
+  //         { id: 2, name: "Tendon Repair", href: "/orthopaedics/tendon-repair" },
+  //       ],
+  //     },
+  //     {
+  //       id: 6,
+  //       name: "Spine Care",
+  //       href: "/orthopaedics/spine-care",
+  //       dropdown: true,
+  //       subItems: [
+  //         {
+  //           id: 1,
+  //           name: "Cervical Spondylosis",
+  //           href: "/orthopaedics/cervical-spondylosis",
+  //         },
+  //         {
+  //           id: 2,
+  //           name: "Lumbar Spondylosis",
+  //           href: "/orthopaedics/lumbar-spondylosis",
+  //         },
+  //         {
+  //           id: 3,
+  //           name: "Lower Back Pain",
+  //           href: "/orthopaedics/lower-back-pain",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       id: 7,
+  //       name: "Soft Tissue Injury Management",
+  //       href: "/orthopaedics/soft-tissue-injury-management",
+  //     },
+  //   ],
+  // },
   // {
   //   id: 3,
   //   name: "Services",
@@ -465,7 +560,7 @@ const navItems = [
   //   ],
   // },
   {
-    id: 6,
+    id: 5,
     name: "Gallery",
     href: "/our-gallery",
   },
@@ -475,7 +570,7 @@ const navItems = [
     href: "#",
   },
   {
-    id: 6,
+    id: 7,
     name: "Contact",
     href: "/contact",
   },

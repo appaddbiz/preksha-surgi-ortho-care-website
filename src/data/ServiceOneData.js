@@ -18,6 +18,14 @@ const serviceOneData = {
       href: "/general-surgery/endoscopy-colonoscopy",
     },
     {
+      id: 1,
+      image: "/services/Fracture-Trauma-Surgery.jpg",
+      icon: "/icons/broken-bone.svg",
+      title: "Fracture & Trauma Surgery",
+      text: "Expert care for fractures and complex trauma injuries.",
+      href: "/orthopaedics/fracture-trauma-surgery",
+    },
+    {
       id: 2,
       image: "/services/Laparoscopic-Surgeries.jpg",
       icon: "/icons/laparoscopic-surgery.svg",
@@ -26,12 +34,28 @@ const serviceOneData = {
       href: "/general-surgery/laparoscopic-surgeries",
     },
     {
+      id: 2,
+      image: "/services/Shoulder-Dislocation-Treatment.jpg",
+      icon: "/icons/fracture (4).svg",
+      title: "Shoulder Dislocation Treatment",
+      text: "Specialized treatment for acute and recurrent shoulder dislocations.",
+      href: "/orthopaedics/shoulder-dislocation-treatment",
+    },
+    {
       id: 3,
       image: "/services/Gall-Bladder-Surgery.jpg",
       icon: "/icons/bladder-cancer.svg",
       title: "Gall Bladder Surgery",
       text: "Safe and effective treatment for gallstones and gall bladder conditions.",
       href: "/general-surgery/gall-bladder-surgery",
+    },
+    {
+      id: 3,
+      image: "/services/Elbow-Dislocation-Treatment.jpeg",
+      icon: "/icons/elbow (1).svg",
+      title: "Elbow Dislocation Treatment",
+      text: "Effective management and recovery for elbow dislocations.",
+      href: "/orthopaedics/elbow-dislocation-treatment",
     },
     {
       id: 4,

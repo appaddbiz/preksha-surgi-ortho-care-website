@@ -50,6 +50,11 @@ export const serviceDetailsData = [
   },
   {
     id: 1,
+    link: "/our-services",
+    headingTitle: "Our Services",
+  },
+  {
+    id: 1,
     link: "/general-surgery/endoscopy-colonoscopy",
     heading: "Endoscopy & Colonoscopy",
     headingTitle: "General Surgery",
@@ -1800,7 +1805,7 @@ export const serviceDetailsData = [
       {
         title: "Specialized Trauma Care",
         description:
-          "Our hospital is equipped to handle complex trauma cases including polytrauma, multiple fractures, and joint injuries. We provide 24/7 emergency care to stabilize and treat critical injuries promptly.",
+          "Our hospital is equipped to handle complex trauma cases including polytrauma, multiple fractures, and joint injuries. We provide emergency care to stabilize and treat critical injuries promptly.",
       },
       {
         title: "Rehabilitation & Recovery",

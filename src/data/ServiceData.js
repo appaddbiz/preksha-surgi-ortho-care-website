@@ -1,18 +1,9 @@
-import bg from "@/assets/images/backgrounds/service-bg-3.jpg";
-import shape from "@/assets/images/shapes/service-shape-3.png";
-import image1 from "@/assets/images/resources/service-3-1.jpg";
-import image2 from "@/assets/images/resources/service-3-2.jpg";
-import image3 from "@/assets/images/resources/service-3-3.jpg";
-import image4 from "@/assets/images/resources/service-3-4.jpg";
+const combinedServiceData = {
+  tagLine: "Specialized Care",
+  title: "Orthopaedics & General Surgery",
 
-const serviceThreeData = {
-  bg,
-  shape,
-
-  tagLine: "Orthopaedics",
-  title: "Advanced Bone & Joint Care",
-
-  carouselData: [
+  services: [
+    // Alternating Orthopaedics + General Surgery (first 20)
     {
       id: 1,
       image: "/services/Fracture-Trauma-Surgery.jpg",
@@ -23,6 +14,14 @@ const serviceThreeData = {
     },
     {
       id: 2,
+      image: "/services/Endoscopy-Colonoscopy.jpg",
+      icon: "/icons/endoscopy (1).svg",
+      title: "Endoscopy & Colonoscopy",
+      text: "Accurate diagnosis and treatment with advanced endoscopic procedures.",
+      href: "/general-surgery/endoscopy-colonoscopy",
+    },
+    {
+      id: 3,
       image: "/services/Shoulder-Dislocation-Treatment.jpg",
       icon: "/icons/Shoulder-Dislocation.svg",
       title: "Shoulder Dislocation Treatment",
@@ -30,7 +29,15 @@ const serviceThreeData = {
       href: "/orthopaedics/shoulder-dislocation-treatment",
     },
     {
-      id: 3,
+      id: 4,
+      image: "/services/Laparoscopic-Surgeries.jpg",
+      icon: "/icons/laparoscopic-surgery (1).svg",
+      title: "Laparoscopic Surgeries",
+      text: "Minimally invasive surgeries for faster recovery and minimal scars.",
+      href: "/general-surgery/laparoscopic-surgeries",
+    },
+    {
+      id: 5,
       image: "/services/Elbow-Dislocation-Treatment.jpeg",
       icon: "/icons/elbow.svg",
       title: "Elbow Dislocation Treatment",
@@ -38,7 +45,15 @@ const serviceThreeData = {
       href: "/orthopaedics/elbow-dislocation-treatment",
     },
     {
-      id: 4,
+      id: 6,
+      image: "/services/Gall-Bladder-Surgery.jpg",
+      icon: "/icons/bladder.svg",
+      title: "Gall Bladder Surgery",
+      text: "Safe and effective treatment for gallstones and gall bladder conditions.",
+      href: "/general-surgery/gall-bladder-surgery",
+    },
+    {
+      id: 7,
       image: "/services/Arthritis-Joint-Pain-Care.jpg",
       icon: "/icons/arthritis.svg",
       title: "Arthritis & Joint Pain Care",
@@ -46,7 +61,15 @@ const serviceThreeData = {
       href: "/orthopaedics/arthritis-osteoarthritis-joint-pains",
     },
     {
-      id: 5,
+      id: 8,
+      image: "/services/Hernia-Surgery.jpg",
+      icon: "/icons/inguinal-hernia (1).svg",
+      title: "Hernia Surgery",
+      text: "Advanced surgical care for all types of hernia with durable results.",
+      href: "/general-surgery/hernia",
+    },
+    {
+      id: 9,
       image: "/services/Arthroplasty-Joint-Replacement.jpg",
       icon: "/icons/bone-joint.svg",
       title: "Arthroplasty / Joint Replacement",
@@ -54,7 +77,15 @@ const serviceThreeData = {
       href: "/orthopaedics/arthroplasty-joint-replacement",
     },
     {
-      id: 6,
+      id: 10,
+      image: "/services/Appendix-Surgery.jpg",
+      icon: "/icons/appendix (1).svg",
+      title: "Appendix Surgery",
+      text: "Quick and precise appendix removal to prevent complications.",
+      href: "/general-surgery/appendix",
+    },
+    {
+      id: 11,
       image: "/services/Hemi-Arthroplasty.jpg",
       icon: "/icons/arthroscopy.svg",
       title: "Hemi Arthroplasty",
@@ -62,7 +93,15 @@ const serviceThreeData = {
       href: "/orthopaedics/hemi-arthroplasty",
     },
     {
-      id: 7,
+      id: 12,
+      image: "/services/Gastrointestinal-Surgery.jpg",
+      icon: "/icons/intestine.svg",
+      title: "Gastrointestinal Surgery",
+      text: "Specialized care for stomach, intestine, and digestive system conditions.",
+      href: "/general-surgery/gastrointestinal-surgery",
+    },
+    {
+      id: 13,
       image: "/services/Total-Hip-Replacement.jpg",
       icon: "/icons/hip-replacement.svg",
       title: "Total Hip Replacement",
@@ -70,7 +109,15 @@ const serviceThreeData = {
       href: "/orthopaedics/total-hip-replacement",
     },
     {
-      id: 8,
+      id: 14,
+      image: "/services/Breast-Lumps.jpg",
+      icon: "/icons/breast-lump (1).svg",
+      title: "Breast Lumps",
+      text: "Comprehensive evaluation and treatment of benign and malignant breast lumps.",
+      href: "/general-surgery/breast-lumps",
+    },
+    {
+      id: 15,
       image: "/services/Total-Knee-Replacement.png",
       icon: "/icons/knee-joint.svg",
       title: "Total Knee Replacement",
@@ -78,7 +125,15 @@ const serviceThreeData = {
       href: "/orthopaedics/total-knee-replacement",
     },
     {
-      id: 9,
+      id: 16,
+      image: "/services/Piles-Fistula-Fissures.png",
+      icon: "/icons/blood (1).svg",
+      title: "Piles / Fistula in Ano / Fissures",
+      text: "Advanced care for anorectal conditions including piles, fistula, and fissures.",
+      href: "/general-surgery/piles-fistula-fissures",
+    },
+    {
+      id: 17,
       image: "/services/Arthroscopy.webp",
       icon: "/icons/arthroscopy (1).svg",
       title: "Arthroscopy",
@@ -86,7 +141,15 @@ const serviceThreeData = {
       href: "/orthopaedics/arthroscopy",
     },
     {
-      id: 10,
+      id: 18,
+      image: "/services/Lipoma-Cyst-Abscess.webp",
+      icon: "/icons/surgery (1).svg",
+      title: "Lipoma / Sebaceous Cyst / Abscess",
+      text: "Diagnosis and surgical removal of lipomas, cysts, and abscesses with precision.",
+      href: "/general-surgery/lipoma-cyst-abscess",
+    },
+    {
+      id: 19,
       image: "/services/Arthroscopic-ACL-Reconstruction.jpg",
       icon: "/icons/pain-in-joints.svg",
       title: "Arthroscopic ACL Reconstruction",
@@ -94,7 +157,17 @@ const serviceThreeData = {
       href: "/orthopaedics/arthroscopic-acl-reconstruction",
     },
     {
-      id: 11,
+      id: 20,
+      image: "/services/Diabetic-Foot-Ulcer.jpg",
+      icon: "/icons/diabetic-foot (1).svg",
+      title: "Diabetic Foot Ulcer",
+      text: "Expert management and care for diabetic foot ulcers to prevent complications.",
+      href: "/general-surgery/diabetic-foot-ulcer",
+    },
+
+    // Remaining Orthopaedics (no more General left)
+    {
+      id: 21,
       image: "/services/Arthroscopic-PCL-Reconstruction.jpg",
       icon: "/icons/knee-pad.svg",
       title: "Arthroscopic PCL Reconstruction",
@@ -102,7 +175,7 @@ const serviceThreeData = {
       href: "/orthopaedics/pcl-reconstruction",
     },
     {
-      id: 12,
+      id: 22,
       image: "/services/Arthroscopic-Rotator-Cuff-Surgery.webp",
       icon: "/icons/shoulder.svg",
       title: "Arthroscopic Rotator Cuff Surgery",
@@ -110,7 +183,7 @@ const serviceThreeData = {
       href: "/orthopaedics/arthroscopic-rotator-cuff-surgery",
     },
     {
-      id: 13,
+      id: 23,
       image: "/services/Recurrent-Shoulder-Dislocation.webp",
       icon: "/icons/Shoulder Dislocation.svg",
       title: "Recurrent Shoulder Dislocation",
@@ -118,7 +191,7 @@ const serviceThreeData = {
       href: "/orthopaedics/recurrent-shoulder-dislocation-treatment",
     },
     {
-      id: 14,
+      id: 24,
       image: "/services/Recurrent-Patellar-Dislocation.jpeg",
       icon: "/icons/kneecap.svg",
       title: "Recurrent Patellar Dislocation",
@@ -126,7 +199,7 @@ const serviceThreeData = {
       href: "/orthopaedics/recurrent-patellar-dislocation-treatment",
     },
     {
-      id: 15,
+      id: 25,
       image: "/services/sports-injury.jpg",
       icon: "/icons/injury (1).svg",
       title: "Sports Injury",
@@ -134,7 +207,7 @@ const serviceThreeData = {
       href: "/orthopaedics/sports-injuries",
     },
     {
-      id: 16,
+      id: 26,
       image: "/services/Sports-Injury–Ligament-Repair.webp",
       icon: "/icons/injury (2).svg",
       title: "Sports Injury – Ligament Repair",
@@ -142,7 +215,7 @@ const serviceThreeData = {
       href: "/orthopaedics/ligament-repair",
     },
     {
-      id: 17,
+      id: 27,
       image: "/services/Sports-Injury–Tendon-Repair.jpg",
       icon: "/icons/injury.svg",
       title: "Sports Injury – Tendon Repair",
@@ -150,7 +223,7 @@ const serviceThreeData = {
       href: "/orthopaedics/tendon-repair",
     },
     {
-      id: 18,
+      id: 28,
       image: "/services/Spine-Care.jpeg",
       icon: "/icons/spine.svg",
       title: "Spine Care",
@@ -158,7 +231,7 @@ const serviceThreeData = {
       href: "/orthopaedics/spine-care",
     },
     {
-      id: 19,
+      id: 29,
       image: "/services/Cervical-Spondylosis.jpg",
       icon: "/icons/neck-pain.svg",
       title: "Cervical Spondylosis",
@@ -166,7 +239,7 @@ const serviceThreeData = {
       href: "/orthopaedics/cervical-spondylosis",
     },
     {
-      id: 20,
+      id: 30,
       image: "/services/Lumbar-Spondylosis.jpg",
       icon: "/icons/back.svg",
       title: "Lumbar Spondylosis",
@@ -174,7 +247,7 @@ const serviceThreeData = {
       href: "/orthopaedics/lumbar-spondylosis",
     },
     {
-      id: 21,
+      id: 31,
       image: "/services/Lower-Back-Pain-Management.jpg",
       icon: "/icons/back-pain.svg",
       title: "Lower Back Pain Management",
@@ -182,7 +255,7 @@ const serviceThreeData = {
       href: "/orthopaedics/lower-back-pain",
     },
     {
-      id: 22,
+      id: 32,
       image: "/services/Soft-Tissue-Injury-Management.webp",
       icon: "/icons/tendon.svg",
       title: "Soft Tissue Injury Management",
@@ -192,4 +265,4 @@ const serviceThreeData = {
   ],
 };
 
-export default serviceThreeData;
+export default combinedServiceData;

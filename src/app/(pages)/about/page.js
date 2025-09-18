@@ -34,7 +34,7 @@ const page = () => {
       <HeaderCloned />
       <PageHeader title="About Page" subTitle="About" />
       <AboutThree />
-      <FunFactTwo />
+      {/* <FunFactTwo />s */}
       <CtaOne page={true} />
       <TabOne />
       {/* <ServiceTwo page={true} titleTwo="two" /> */}

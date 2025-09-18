@@ -149,7 +149,7 @@ const footerData = {
     { id: 1, href: "/", title: "Home" },
     { id: 2, href: "/about", title: "About" },
     { id: 3, href: "/our-doctors", title: "Doctors" },
-    { id: 4, href: "/orthopaedics", title: "Orthopedics" },
+    { id: 4, href: "/our-services", title: "Our Services" },
     { id: 4, href: "/our-gallery", title: "Gallery" },
     { id: 4, href: "#", title: "Blogs" },
     { id: 5, href: "/contact", title: "Contact" },
@@ -157,7 +157,7 @@ const footerData = {
   ],
   bottomLinks: [
     { id: 1, href: "/about", title: "About Us" },
-    { id: 2, href: "/general-surgery", title: "General surgery" },
+    { id: 2, href: "/orthopaedics", title: "Orthopaedics" },
     { id: 3, href: "#", title: "Blogs" },
     // { id: 4, href: "/portfolio", title: "Portfolio" },
   ],

@@ -48,15 +48,15 @@ const page = () => {
       {/* <MainSliderOne /> */}
       <Banner />
       <AboutThree />
+      <CtaTen />
       {/* <FeatureOne /> */}
-      <FunFactTwo />
+      {/* <FunFactTwo /> */}
       {/* <CtaOne /> */}
       <ServiceOne limit={6} />
-      <ServiceThree variant="carousel" />
+      {/* <ServiceThree variant="carousel" /> */}
       <AboutOne />
       {/* <FunFactOne /> */}
       {/* <SlideText /> */}
-      <CtaTen />
       <TabOne />
       <FaqOne />
       {/* <CtaTwo /> */}

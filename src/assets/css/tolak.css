@@ -31,7 +31,7 @@
   --tolak-gray2-rgb: 193, 193, 193;
   --tolak-white: #fff;
   --tolak-white-rgb: 255, 255, 255;
-  --tolak-black: #dc2b1c;
+  --tolak-black: #995108;
   --tolak-black-rgb: 5, 29, 31;
   --tolak-black2: #222222;
   --tolak-black2-rgb: 34, 34, 34;
@@ -83,7 +83,7 @@ body.home6 {
   --tolak-text-rgb: 99, 99, 99;
   --tolak-text-dark: #c5c5c5;
   --tolak-text-dark-rgb: 197, 197, 197;
-  --tolak-base: #ff5334;
+  --tolak-base: #995108;
   --tolak-base-rgb: 255, 83, 52;
   --tolak-gray: #f7f8fc;
   --tolak-gray-rgb: 247, 248, 252;
@@ -112,7 +112,7 @@ body.home7 {
   --tolak-text-rgb: 99, 99, 99;
   --tolak-text-dark: #c5c5c5;
   --tolak-text-dark-rgb: 197, 197, 197;
-  --tolak-base: #df2a16;
+  --tolak-base: #995108;
   --tolak-base-rgb: 223, 42, 22;
   --tolak-gray: #f7f8fc;
   --tolak-gray-rgb: 247, 248, 252;
@@ -3727,7 +3727,7 @@ h6 {
   position: relative;
   z-index: 2;
   /* background-color: var(--tolak-black4, #1b272a); */
-  background-color: #dc2b1c;
+  background-color: #995108;
   padding: 13px 0 14px;
 }
 
@@ -6031,6 +6031,7 @@ h6 {
   transition: all 500ms ease;
   transform: scale(0);
 }
+
 
 .main-menu .main-menu__list li ul li.current > a,
 .main-menu .main-menu__list li ul li:hover > a {
@@ -13107,7 +13108,7 @@ body.megamenu-popup-active .mobile-nav__content {
   right: 15px;
   font-size: 18px;
   /* color: var(--tolak-white, #fff); */
-  color: #dc2b1c;
+  color: #995108;
   cursor: pointer;
 }
 
@@ -23785,10 +23786,12 @@ body.boxed-wrapper .main-slider-one__floating-text {
   z-index: -1;
   opacity: 0;
   /* background-color: var(--tolak-black4, #1b272a); */
-  background-color: #d93123;
+  background-color: #995108;
   border-radius: 20px 20px 0 0;
   transition: all 0.4s;
 }
+
+
 
 .service-three__item:hover .service-three__item__content::after {
   height: 100%;

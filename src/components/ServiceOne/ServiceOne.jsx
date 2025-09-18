@@ -1,11 +1,16 @@
+"use client";
+
 import serviceOneData from "@/data/ServiceOneData";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 const { tagLine, title, title2, items } = serviceOneData;
 
 const ServiceOne = ({ titleTwo, limit }) => {
+  const path = usePathname();
+
   const displayedItems = limit ? items.slice(0, limit) : items;
 
   return (
@@ -39,9 +44,11 @@ const ServiceOne = ({ titleTwo, limit }) => {
               }`}
             ></span>
           </h6>
-          <h3 className="sec-title__title">
-            {titleTwo === "two" ? title2 : title}
-          </h3>
+          {path === "/general-surgery" && (
+            <h3 className="sec-title__title">
+              {titleTwo === "two" ? title2 : title}
+            </h3>
+          )}
         </div>
         <Row className="gutter-y-30">
           {displayedItems.map(({ id, image, title, icon, href, text }) => (
@@ -83,7 +90,7 @@ const ServiceOne = ({ titleTwo, limit }) => {
           ))}
           {limit && (
             <Col md={12} style={{ textAlign: "center" }}>
-              <Link href="/general-surgery" className="tolak-btn">
+              <Link href="/our-services" className="tolak-btn">
                 <b>View All Services</b>
                 <span></span>
               </Link>

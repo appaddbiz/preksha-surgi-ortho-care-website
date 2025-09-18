@@ -33,14 +33,14 @@ const Banner = () => {
             {/* Banner 1 */}
             <div className="desk-banner">
               <img
-                src="/banners/Advanced Orthopaedic Care.webp"
+                src="/updated-banners/Advanced Orthopaedic Care.webp"
                 className="d-block w-100"
                 alt="..."
               />
             </div>
             <div className="mobile-banner">
               <img
-                src="/banners/mobile.webp"
+                src="/updated-banners/mobile-2.webp"
                 className="d-block w-100"
                 alt="..."
               />
@@ -50,14 +50,14 @@ const Banner = () => {
             {/* Banner 1 */}
             <div className="desk-banner">
               <img
-                src="/banners/Dr. Shashank Joshi.webp"
+                src="/updated-banners/Dr. Shashank Joshi.webp"
                 className="d-block w-100"
                 alt="..."
               />
             </div>
             <div className="mobile-banner">
               <img
-                src="/banners/Dr. Shashank Joshi.webp"
+                src="/updated-banners/mobile.webp"
                 className="d-block w-100"
                 alt="..."
               />
@@ -67,14 +67,14 @@ const Banner = () => {
             {/* Banner 1 */}
             <div className="desk-banner">
               <img
-                src="/banners/Dr. Prerana R T.webp"
+                src="/updated-banners/Dr. Prerana R T.webp"
                 className="d-block w-100"
                 alt="..."
               />
             </div>
             <div className="mobile-banner">
               <img
-                src="/banners/Dr. Prerana R T.webp"
+                src="/updated-banners/mobile-1.webp"
                 className="d-block w-100"
                 alt="..."
               />
@@ -85,14 +85,14 @@ const Banner = () => {
             {/* Banner 2 */}
             <div className="desk-banner">
               <img
-                src="/banners/Laparoscopic & General Surgeries.webp"
+                src="/updated-banners/Laparoscopic & General Surgeries.webp"
                 className="d-block w-100"
                 alt="..."
               />
             </div>
             <div className="mobile-banner">
               <img
-                src="/banners/mobile-1.webp"
+                src="/updated-banners/mobile-3.webp"
                 className="d-block w-100"
                 alt="..."
               />
@@ -102,14 +102,14 @@ const Banner = () => {
             {/* Banner 2 */}
             <div className="desk-banner">
               <img
-                src="/banners/Piles, Fistula & Diabetic Foot Care.webp"
+                src="/updated-banners/Piles, Fistula & Diabetic Foot Care.webp"
                 className="d-block w-100"
                 alt="..."
               />
             </div>
             <div className="mobile-banner">
               <img
-                src="/banners/mobile-1.webp"
+                src="/updated-banners/mobile-4.webp"
                 className="d-block w-100"
                 alt="..."
               />
