@@ -164,6 +164,11 @@ const navItems = [
             name: "Diabetic foot ulcer",
             href: "/general-surgery/diabetic-foot-ulcer",
           },
+          {
+            id: 10,
+            name: "Varicose Veins",
+            href: "/general-surgery/varicose-veins-treatment",
+          },
         ],
       },
       {

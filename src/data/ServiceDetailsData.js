@@ -103,6 +103,11 @@ export const serviceDetailsData = [
           name: "Diabetic Foot Ulcer",
           href: "/general-surgery/diabetic-foot-ulcer",
         },
+        {
+          id: 11,
+          name: "Varicose Veins",
+          href: "/general-surgery/varicose-veins-treatment",
+        },
       ],
       teamOneData: {
         tagLine: "Our Doctor",
@@ -220,6 +225,175 @@ export const serviceDetailsData = [
   },
   {
     id: 2,
+    link: "/general-surgery/varicose-veins-treatment",
+    heading: "Varicose Veins Treatment",
+    headingTitle: "General Surgery",
+    subHeadingTitle: "Varicose Veins",
+    subHeading: "Advanced Varicose Veins Care at Preksha Surgi & Ortho Care",
+    thumbnailImage: "/services/Varicose-Veins.jpg",
+    sidebar: {
+      title: "All Services:",
+      navItems: [
+        {
+          id: 1,
+          name: "Endoscopy / Colonoscopy",
+          href: "/general-surgery/endoscopy-colonoscopy",
+        },
+        {
+          id: 2,
+          name: "Laparoscopic Surgeries",
+          href: "/general-surgery/laparoscopic-surgeries",
+        },
+        {
+          id: 3,
+          name: "Gall Bladder Surgery",
+          href: "/general-surgery/gall-bladder-surgery",
+        },
+        { id: 4, name: "Hernia", href: "/general-surgery/hernia" },
+        { id: 5, name: "Appendix", href: "/general-surgery/appendix" },
+        {
+          id: 6,
+          name: "Gastrointestinal Surgery",
+          href: "/general-surgery/gastrointestinal-surgery",
+        },
+        { id: 7, name: "Breast Lumps", href: "/general-surgery/breast-lumps" },
+        {
+          id: 8,
+          name: "Piles / Fistula / Fissures",
+          href: "/general-surgery/piles-fistula-fissures",
+        },
+        {
+          id: 9,
+          name: "Lipoma / Sebaceous Cyst / Abscess",
+          href: "/general-surgery/lipoma-cyst-abscess",
+        },
+        {
+          id: 10,
+          name: "Diabetic Foot Ulcer",
+          href: "/general-surgery/diabetic-foot-ulcer",
+        },
+        {
+          id: 11,
+          name: "Varicose Veins",
+          href: "/general-surgery/varicose-veins-treatment",
+        },
+      ],
+      teamOneData: {
+        tagLine: "Our Doctor",
+        title: "General Surgery",
+        title2: "Meet The Team",
+        carouselData: [
+          {
+            id: 1,
+            image: "/doctors/Dr-Prerana.jpg",
+            socials: [
+              {
+                id: 1,
+                icon: faFacebookF,
+                link: "https://facebook.com",
+                name: "Facebook",
+              },
+              {
+                id: 2,
+                icon: faPinterestP,
+                link: "https://pinterest.com",
+                name: "Pinterest",
+              },
+              {
+                id: 3,
+                icon: faTwitter,
+                link: "https://twitter.com",
+                name: "Twitter",
+              },
+              {
+                id: 4,
+                icon: faInstagram,
+                link: "https://instagram.com",
+                name: "Instagram",
+              },
+            ],
+            title: "Dr. Prerana R T",
+            href: "/our-doctors/dr-prerana-r-t",
+            designation: "General and Laparoscopic Surgeon",
+          },
+        ],
+      },
+    },
+    content: [
+      {
+        title: "What are Varicose Veins?",
+        description:
+          "Varicose veins are swollen, twisted veins that usually appear on the legs and feet. They occur when valves in the veins weaken, causing blood to pool and veins to enlarge. While often a cosmetic concern, they can cause discomfort, swelling, pain, and in severe cases, skin ulcers or blood clots.",
+      },
+      {
+        title: "Why Choose Varicose Veins Treatment?",
+        description:
+          "At Preksha Surgi & Ortho Care, we provide minimally invasive and advanced treatment options such as endovenous laser therapy, sclerotherapy, and surgical vein removal. Early treatment prevents complications, relieves symptoms, and improves appearance.",
+      },
+      {
+        title: "Benefits of Varicose Veins Treatment",
+        description:
+          "Treatments are safe, effective, and often performed on an outpatient basis. They reduce pain, swelling, and the risk of ulcers. Most patients return to normal activities quickly while achieving improved vein health and leg appearance.",
+      },
+      {
+        title: "Our Expertise & Technology",
+        description:
+          "We combine advanced vascular technology with specialized expertise. Our surgeons use high-precision techniques to ensure safe, minimally invasive treatment with optimal outcomes.",
+      },
+      {
+        title: "Patient-Centered Care",
+        description:
+          "Our team prioritizes patient comfort, safety, and education. From initial consultation to post-procedure follow-up, we ensure each patient feels informed, supported, and confident in their care.",
+      },
+      {
+        title: "Comprehensive Solutions for Vein Health",
+        description:
+          "We offer diagnosis, treatment, and preventive guidance for varicose veins and other venous disorders. Early intervention helps maintain healthy veins and prevents progression of symptoms.",
+      },
+      {
+        title: "Why Trust Preksha Surgi & Ortho Care?",
+        description:
+          "With expert surgeons, advanced technology, and a patient-first approach, we provide effective, safe, and personalized varicose vein care for optimal outcomes and improved quality of life.",
+      },
+    ],
+    skills: [
+      {
+        id: 1,
+        title: "Minimally Invasive Treatment",
+        text: "Endovenous laser therapy, sclerotherapy",
+        percentage: 95,
+      },
+      {
+        id: 2,
+        title: "Patient Comfort & Care",
+        text: "Safe and effective procedures",
+        percentage: 90,
+      },
+    ],
+    lists: [
+      {
+        id: 1,
+        items: [
+          "Safe and minimally invasive procedures",
+          "Relieves pain, swelling, and discomfort",
+        ],
+      },
+      {
+        id: 2,
+        items: [
+          "Outpatient or day-care treatment",
+          "Improves appearance and vein health",
+        ],
+      },
+    ],
+    solutionText:
+      "Our varicose vein treatments are designed to provide safe, effective, and minimally invasive solutions. Early intervention ensures relief from symptoms, prevents complications, and promotes long-term vein health.",
+    contentImage: "/services/varicoseVeinsContent.jpg",
+    lastText:
+      "With advanced technology, skilled surgeons, and a patient-focused approach, we provide effective varicose vein treatments ensuring safety, comfort, and optimal results. Trust us for comprehensive care and guidance on your journey to healthier veins.",
+  },
+  {
+    id: 2,
     link: "/general-surgery/laparoscopic-surgeries",
     heading: "Laparoscopic Surgeries",
     headingTitle: "General Surgery",
@@ -266,6 +440,11 @@ export const serviceDetailsData = [
           id: 10,
           name: "Diabetic Foot Ulcer",
           href: "/general-surgery/diabetic-foot-ulcer",
+        },
+        {
+          id: 11,
+          name: "Varicose Veins",
+          href: "/general-surgery/varicose-veins-treatment",
         },
       ],
       teamOneData: {
@@ -431,6 +610,11 @@ export const serviceDetailsData = [
           name: "Diabetic Foot Ulcer",
           href: "/general-surgery/diabetic-foot-ulcer",
         },
+        {
+          id: 11,
+          name: "Varicose Veins",
+          href: "/general-surgery/varicose-veins-treatment",
+        },
       ],
       teamOneData: {
         tagLine: "Our Doctor",
@@ -594,6 +778,11 @@ export const serviceDetailsData = [
           id: 10,
           name: "Diabetic Foot Ulcer",
           href: "/general-surgery/diabetic-foot-ulcer",
+        },
+        {
+          id: 11,
+          name: "Varicose Veins",
+          href: "/general-surgery/varicose-veins-treatment",
         },
       ],
       teamOneData: {
@@ -760,6 +949,11 @@ export const serviceDetailsData = [
           name: "Diabetic Foot Ulcer",
           href: "/general-surgery/diabetic-foot-ulcer",
         },
+        {
+          id: 11,
+          name: "Varicose Veins",
+          href: "/general-surgery/varicose-veins-treatment",
+        },
       ],
       teamOneData: {
         tagLine: "Our Doctor",
@@ -924,6 +1118,11 @@ export const serviceDetailsData = [
           id: 10,
           name: "Diabetic Foot Ulcer",
           href: "/general-surgery/diabetic-foot-ulcer",
+        },
+        {
+          id: 11,
+          name: "Varicose Veins",
+          href: "/general-surgery/varicose-veins-treatment",
         },
       ],
       teamOneData: {
@@ -1090,6 +1289,11 @@ export const serviceDetailsData = [
           name: "Diabetic Foot Ulcer",
           href: "/general-surgery/diabetic-foot-ulcer",
         },
+        {
+          id: 11,
+          name: "Varicose Veins",
+          href: "/general-surgery/varicose-veins-treatment",
+        },
       ],
       teamOneData: {
         tagLine: "Our Doctor",
@@ -1253,6 +1457,11 @@ export const serviceDetailsData = [
           id: 10,
           name: "Diabetic Foot Ulcer",
           href: "/general-surgery/diabetic-foot-ulcer",
+        },
+        {
+          id: 11,
+          name: "Varicose Veins",
+          href: "/general-surgery/varicose-veins-treatment",
         },
       ],
       teamOneData: {
@@ -1418,6 +1627,11 @@ export const serviceDetailsData = [
           name: "Diabetic Foot Ulcer",
           href: "/general-surgery/diabetic-foot-ulcer",
         },
+        {
+          id: 11,
+          name: "Varicose Veins",
+          href: "/general-surgery/varicose-veins-treatment",
+        },
       ],
       teamOneData: {
         tagLine: "Our Doctor",
@@ -1581,6 +1795,11 @@ export const serviceDetailsData = [
           id: 10,
           name: "Diabetic Foot Ulcer",
           href: "/general-surgery/diabetic-foot-ulcer",
+        },
+        {
+          id: 11,
+          name: "Varicose Veins",
+          href: "/general-surgery/varicose-veins-treatment",
         },
       ],
       teamOneData: {
