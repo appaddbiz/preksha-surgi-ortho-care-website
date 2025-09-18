@@ -158,6 +158,7 @@ const footerData = {
   bottomLinks: [
     { id: 1, href: "/about", title: "About Us" },
     { id: 2, href: "/orthopaedics", title: "Orthopaedics" },
+    { id: 2, href: "/general-surgery", title: "General surgery" },
     { id: 3, href: "#", title: "Blogs" },
     // { id: 4, href: "/portfolio", title: "Portfolio" },
   ],

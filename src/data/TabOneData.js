@@ -46,12 +46,14 @@ export const tabOneData = {
       image: "/doctors/dr-Prerana-r.jpg", // replace with doctor's photo if available
       title: "Dr. Prerana R T",
       link: "/our-doctors/dr-prerana-r-t",
-      text: "Dr. Prerana R T is a skilled General and Laparoscopic Surgeon specializing in minimally invasive and advanced surgical techniques. She is experienced in treating conditions involving the gall bladder, appendix, gastrointestinal system, breast, and abdominal wall. With a focus on faster recovery and minimal scarring, she delivers surgical care with precision, safety, and compassion for her patients.",
+      text: "Dr. Prerana R T is a skilled General and Laparoscopic Surgeon specializing in minimally invasive and advanced surgical techniques. She is experienced in treating conditions involving the gall bladder, appendix, gastrointestinal system, breast, abdominal wall, thyroid diseases, varicose veins, hemorrhoids, piles, and fistula. With a focus on faster recovery and minimal scarring, she delivers surgical care with precision, safety, and compassion for her patients.",
       listItems: [
         "Laparoscopic Surgeries",
         "Gall Bladder & Appendix Surgery",
         "Gastrointestinal Procedures",
         "Breast & Abdominal Surgeries",
+        "Hernia Surgery",
+        "Piles & Fistula Treatments",
       ],
       authors: [author2], // can use profile icon/image
     },

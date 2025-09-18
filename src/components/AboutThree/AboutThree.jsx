@@ -129,7 +129,12 @@ const AboutThree = () => {
                     {tagLine}
                     <span className="sec-title-two__tagline__right icofont-rounded-double-right"></span>
                   </h6>
-                  <h3 className="sec-title-two__title">{title}</h3>
+                  <h3
+                    className="sec-title-two__title"
+                    style={{ fontStyle: "italic" }}
+                  >
+                    {title}
+                  </h3>
                 </div>
                 <p
                   className="about-three__content__text"
