@@ -113,6 +113,22 @@ const serviceOneData = {
       text: "Expert management and care for diabetic foot ulcers to prevent complications.",
       href: "/general-surgery/diabetic-foot-ulcer",
     },
+    {
+      id: 11,
+      image: "/services/Varicose-Veins.jpg",
+      icon: "/icons/varicose-veins (1).svg",
+      title: "Varicose Veins",
+      text: "Advanced treatment options for varicose veins to improve circulation and relieve discomfort.",
+      href: "/general-surgery/varicose-veins-treatment",
+    },
+    {
+      id: 12,
+      image: "/services/Thyroid-Surgery.jpeg",
+      icon: "/icons/biology (1).svg",
+      title: "Thyroid Surgery",
+      text: "Comprehensive thyroid surgery care for conditions like nodules, goiter, and cancer.",
+      href: "/general-surgery/thyroid-surgery",
+    },
   ],
 };
 

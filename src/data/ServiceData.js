@@ -262,6 +262,22 @@ const combinedServiceData = {
       text: "Effective treatments for muscle, ligament, and tendon injuries.",
       href: "/orthopaedics/soft-tissue-injury-management",
     },
+    {
+      id: 13,
+      image: "/services/Varicose-Veins.jpg",
+      icon: "/icons/varicose-veins.svg",
+      title: "Varicose Veins",
+      text: "Advanced treatment options for varicose veins to improve circulation and relieve discomfort.",
+      href: "/general-surgery/varicose-veins-treatment",
+    },
+    {
+      id: 14,
+      image: "/services/Thyroid-Surgery.jpeg",
+      icon: "/icons/biology.svg",
+      title: "Thyroid Surgery",
+      text: "Comprehensive thyroid surgery care for conditions like nodules, goiter, and cancer.",
+      href: "/general-surgery/thyroid-surgery",
+    },
   ],
 };
 

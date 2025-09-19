@@ -2200,7 +2200,7 @@ export const serviceDetailsData = [
         carouselData: [
           {
             id: 1,
-            image: "/doctors/Dr-Shashank-Joshi.jpg",
+            image: "/doctors/dr-shashank-joshi.png",
             socials: [
               {
                 id: 1,
@@ -2357,7 +2357,7 @@ export const serviceDetailsData = [
         carouselData: [
           {
             id: 1,
-            image: "/doctors/Dr-Shashank-Joshi.jpg",
+            image: "/doctors/dr-shashank-joshi.png",
             socials: [
               {
                 id: 1,
@@ -2509,7 +2509,7 @@ export const serviceDetailsData = [
         carouselData: [
           {
             id: 1,
-            image: "/doctors/Dr-Shashank-Joshi.jpg",
+            image: "/doctors/dr-shashank-joshi.png",
             socials: [
               {
                 id: 1,
@@ -2661,7 +2661,7 @@ export const serviceDetailsData = [
         carouselData: [
           {
             id: 1,
-            image: "/doctors/Dr-Shashank-Joshi.jpg",
+            image: "/doctors/dr-shashank-joshi.png",
             socials: [
               {
                 id: 1,
@@ -2813,7 +2813,7 @@ export const serviceDetailsData = [
         carouselData: [
           {
             id: 1,
-            image: "/doctors/Dr-Shashank-Joshi.jpg",
+            image: "/doctors/dr-shashank-joshi.png",
             socials: [
               {
                 id: 1,
@@ -2965,7 +2965,7 @@ export const serviceDetailsData = [
         carouselData: [
           {
             id: 1,
-            image: "/doctors/Dr-Shashank-Joshi.jpg",
+            image: "/doctors/dr-shashank-joshi.png",
             socials: [
               {
                 id: 1,
@@ -3117,7 +3117,7 @@ export const serviceDetailsData = [
         carouselData: [
           {
             id: 1,
-            image: "/doctors/Dr-Shashank-Joshi.jpg",
+            image: "/doctors/dr-shashank-joshi.png",
             socials: [
               {
                 id: 1,
@@ -3269,7 +3269,7 @@ export const serviceDetailsData = [
         carouselData: [
           {
             id: 1,
-            image: "/doctors/Dr-Shashank-Joshi.jpg",
+            image: "/doctors/dr-shashank-joshi.png",
             socials: [
               {
                 id: 1,
@@ -3421,7 +3421,7 @@ export const serviceDetailsData = [
         carouselData: [
           {
             id: 1,
-            image: "/doctors/Dr-Shashank-Joshi.jpg",
+            image: "/doctors/dr-shashank-joshi.png",
             socials: [
               {
                 id: 1,
@@ -3569,7 +3569,7 @@ export const serviceDetailsData = [
         carouselData: [
           {
             id: 1,
-            image: "/doctors/Dr-Shashank-Joshi.jpg",
+            image: "/doctors/dr-shashank-joshi.png",
             socials: [
               {
                 id: 1,
@@ -3720,7 +3720,7 @@ export const serviceDetailsData = [
         carouselData: [
           {
             id: 1,
-            image: "/doctors/Dr-Shashank-Joshi.jpg",
+            image: "/doctors/dr-shashank-joshi.png",
             socials: [
               {
                 id: 1,
@@ -3872,7 +3872,7 @@ export const serviceDetailsData = [
         carouselData: [
           {
             id: 1,
-            image: "/doctors/Dr-Shashank-Joshi.jpg",
+            image: "/doctors/dr-shashank-joshi.png",
             socials: [
               {
                 id: 1,
@@ -4024,7 +4024,7 @@ export const serviceDetailsData = [
         carouselData: [
           {
             id: 1,
-            image: "/doctors/Dr-Shashank-Joshi.jpg",
+            image: "/doctors/dr-shashank-joshi.png",
             socials: [
               {
                 id: 1,
@@ -4181,7 +4181,7 @@ export const serviceDetailsData = [
         carouselData: [
           {
             id: 1,
-            image: "/doctors/Dr-Shashank-Joshi.jpg",
+            image: "/doctors/dr-shashank-joshi.png",
             socials: [
               {
                 id: 1,
@@ -4338,7 +4338,7 @@ export const serviceDetailsData = [
         carouselData: [
           {
             id: 1,
-            image: "/doctors/Dr-Shashank-Joshi.jpg",
+            image: "/doctors/dr-shashank-joshi.png",
             socials: [
               {
                 id: 1,
@@ -4495,7 +4495,7 @@ export const serviceDetailsData = [
         carouselData: [
           {
             id: 1,
-            image: "/doctors/Dr-Shashank-Joshi.jpg",
+            image: "/doctors/dr-shashank-joshi.png",
             socials: [
               {
                 id: 1,
@@ -4652,7 +4652,7 @@ export const serviceDetailsData = [
         carouselData: [
           {
             id: 1,
-            image: "/doctors/Dr-Shashank-Joshi.jpg",
+            image: "/doctors/dr-shashank-joshi.png",
             socials: [
               {
                 id: 1,
@@ -4809,7 +4809,7 @@ export const serviceDetailsData = [
         carouselData: [
           {
             id: 1,
-            image: "/doctors/Dr-Shashank-Joshi.jpg",
+            image: "/doctors/dr-shashank-joshi.png",
             socials: [
               {
                 id: 1,
@@ -4966,7 +4966,7 @@ export const serviceDetailsData = [
         carouselData: [
           {
             id: 1,
-            image: "/doctors/Dr-Shashank-Joshi.jpg",
+            image: "/doctors/dr-shashank-joshi.png",
             socials: [
               {
                 id: 1,
@@ -5123,7 +5123,7 @@ export const serviceDetailsData = [
         carouselData: [
           {
             id: 1,
-            image: "/doctors/Dr-Shashank-Joshi.jpg",
+            image: "/doctors/dr-shashank-joshi.png",
             socials: [
               {
                 id: 1,
@@ -5280,7 +5280,7 @@ export const serviceDetailsData = [
         carouselData: [
           {
             id: 1,
-            image: "/doctors/Dr-Shashank-Joshi.jpg",
+            image: "/doctors/dr-shashank-joshi.png",
             socials: [
               {
                 id: 1,
@@ -5437,7 +5437,7 @@ export const serviceDetailsData = [
         carouselData: [
           {
             id: 1,
-            image: "/doctors/Dr-Shashank-Joshi.jpg",
+            image: "/doctors/dr-shashank-joshi.png",
             socials: [
               {
                 id: 1,

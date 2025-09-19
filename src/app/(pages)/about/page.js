@@ -1,5 +1,6 @@
 import AboutThree from "@/components/AboutThree/AboutThree";
 import CtaOne from "@/components/CtaOne/CtaOne";
+import Doctor from "@/components/DoctorProfile/Doctor";
 import FaqOne from "@/components/FaqOne/FaqOne";
 import FooterThree from "@/components/FooterThree/FooterThree";
 import FooterTwo from "@/components/FooterTwo/FooterTwo";
@@ -36,7 +37,7 @@ const page = () => {
       <AboutThree />
       {/* <FunFactTwo />s */}
       <CtaOne page={true} />
-      <TabOne />
+      <Doctor />
       {/* <ServiceTwo page={true} titleTwo="two" /> */}
       {/* <TestimonialsTwo page={true} /> */}
       <FaqOne />

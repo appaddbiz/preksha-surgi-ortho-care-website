@@ -31,7 +31,7 @@ export const tabOneData = {
       id: 1,
       image: "/doctors/dr-shashank.jpg", // replace with doctor's photo if available
       title: "Dr. Shashank Joshi",
-      text: "Dr. Shashank Joshi is an Orthopaedic and Joint Replacement Surgeon committed to restoring mobility and improving quality of life. With extensive expertise in managing fractures, trauma care, arthritis, joint replacements, and advanced arthroscopy, he provides comprehensive treatment for patients of all age groups. His compassionate approach ensures both surgical precision and patient comfort.",
+      text: "Dr. Shashank Joshi is an experienced orthopaedic surgeon with a special interest in trauma care and joint replacement surgeries. He completed his MBBS from Navodaya Medical College, Raichur, followed by Diploma in Orthopaedics (D.Ortho) from the renowned MRMC, Kalaburgi. He further pursued a Fellowship in Joint Replacement and Arthroplasty, gaining expertise in advanced surgical techniques.",
       listItems: [
         "Fracture & Trauma Surgery",
         "Joint Replacement (Hip & Knee)",
@@ -46,7 +46,7 @@ export const tabOneData = {
       image: "/doctors/dr-Prerana-r.jpg", // replace with doctor's photo if available
       title: "Dr. Prerana R T",
       link: "/our-doctors/dr-prerana-r-t",
-      text: "Dr. Prerana R T is a skilled General and Laparoscopic Surgeon specializing in minimally invasive and advanced surgical techniques. She is experienced in treating conditions involving the gall bladder, appendix, gastrointestinal system, breast, abdominal wall, thyroid diseases, varicose veins, hemorrhoids, piles, and fistula. With a focus on faster recovery and minimal scarring, she delivers surgical care with precision, safety, and compassion for her patients.",
+      text: "Dr. Prerana is a skilled surgeon with advanced training in minimally invasive (keyhole) surgery. She completed her medical education at JSS Medical College, Mysore, followed by MS in General Surgery from Punjab, and a Fellowship in Minimal Invasive Surgery(RGUHS recognised) from the prestigious Bangalore Medical College & Research Institute. She is also a certified member of IAGES with specialized training in laparoscopic hernia surgery (FIAGES, FALS – Hernia).",
       listItems: [
         "Laparoscopic Surgeries",
         "Gall Bladder & Appendix Surgery",

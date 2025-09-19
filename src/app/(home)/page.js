@@ -29,6 +29,7 @@ import CtaTen from "@/components/CtaTen/CtaTen";
 // import FooterSix from "@/components/FooterSix/FooterSix";
 import FooterTwo from "@/components/FooterTwo/FooterTwo";
 import Banner from "@/components/Banner/Banner";
+import Doctor from "@/components/DoctorProfile/Doctor";
 // import { icon } from "@fortawesome/fontawesome-svg-core";
 
 export const metadata = {
@@ -57,7 +58,7 @@ const page = () => {
       <AboutOne />
       {/* <FunFactOne /> */}
       {/* <SlideText /> */}
-      <TabOne />
+      <Doctor />
       <FaqOne />
       {/* <CtaTwo /> */}
       {/* <TeamOne /> */}

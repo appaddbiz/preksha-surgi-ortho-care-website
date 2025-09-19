@@ -67,7 +67,7 @@ const TeamOnePage = ({ titleTwo }) => {
                         src={image}
                         alt={title}
                         // style={{ height: "auto" }}
-                        height={370}
+                        height={300}
                         width={340}
                       />
                     </div>
@@ -87,7 +87,9 @@ const TeamOnePage = ({ titleTwo }) => {
                         </div>
                       </div> */}
                       <h3 className="team-card__title">
-                        <Link href={href}>{title}</Link>
+                        <Link href={href} style={{ color: "#995108" }}>
+                          {title}
+                        </Link>
                       </h3>
                       <p className="team-card__designation">{designation}</p>
                     </div>

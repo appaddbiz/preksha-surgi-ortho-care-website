@@ -1,4 +1,5 @@
 import ClientCarousel from "@/components/ClientCarousel/ClientCarousel";
+import Doctor from "@/components/DoctorProfile/Doctor";
 import FooterThree from "@/components/FooterThree/FooterThree";
 import FooterTwo from "@/components/FooterTwo/FooterTwo";
 import FunFactTwo from "@/components/FunFactTwo/FunFactTwo";
@@ -30,7 +31,7 @@ const page = () => {
       <Header />
       <HeaderCloned />
       <PageHeader title="Team Details" subTitle="Team Details" />
-      <TabOne />
+      <Doctor />
       {/* <FunFactTwo /> */}
       {/* <TeamOne titleTwo="two" /> */}
       {/* <ClientCarousel pageTitle="teamDetails" /> */}

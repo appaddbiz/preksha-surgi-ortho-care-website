@@ -6,21 +6,21 @@ const shashankJoshiDetailsData = {
   image: "/gallery/shashank.jpg",
   name: "Dr. Shashank Joshi",
   about:
-    "Orthopaedic and Joint Replacement Surgeon at Preksha Surgi & Ortho Care. He is dedicated to providing advanced treatment options in trauma, joint replacement, and orthopaedic care with compassionate patient support.",
+    "Dr. Shashank Joshi is an experienced orthopaedic surgeon with a special interest in trauma care and joint replacement surgeries. He completed his MBBS from Navodaya Medical College, Raichur, followed by Diploma in Orthopaedics (D.Ortho) from the renowned MRMC, Kalaburgi. He further pursued a Fellowship in Joint Replacement and Arthroplasty, gaining expertise in advanced surgical techniques.",
   contact: "+919108636085",
   subHref: "tel",
   socialLinks: [
-    {
-      name: "Facebook",
-      href: "https://facebook.com",
-      icon: "fab fa-facebook-f",
-    },
-    {
-      name: "LinkedIn",
-      href: "https://linkedin.com",
-      icon: "fab fa-linkedin-in",
-    },
-    { name: "Twitter", href: "https://twitter.com", icon: "fab fa-twitter" },
+    // {
+    //   name: "Facebook",
+    //   href: "https://facebook.com",
+    //   icon: "fab fa-facebook-f",
+    // },
+    // {
+    //   name: "LinkedIn",
+    //   href: "https://linkedin.com",
+    //   icon: "fab fa-linkedin-in",
+    // },
+    // { name: "Twitter", href: "https://twitter.com", icon: "fab fa-twitter" },
     {
       name: "Instagram",
       href: "https://instagram.com",
@@ -28,7 +28,7 @@ const shashankJoshiDetailsData = {
     },
   ],
   additionalText:
-    "Dr. Shashank Joshi specializes in orthopaedic trauma, joint replacement, and minimally invasive procedures. At Preksha Surgi & Ortho Care, he combines clinical expertise with modern technology to deliver the best possible outcomes for patients. His focus is on restoring mobility, reducing pain, and improving quality of life through comprehensive care. \n\nHe has successfully treated a wide range of orthopaedic conditions including fractures, arthritis, sports injuries, and complex joint problems. His expertise in knee and hip replacement surgeries ensures faster recovery, long-lasting results, and improved patient satisfaction. \n\nDr. Joshi believes in a holistic approach to healthcare, where advanced surgical techniques are supported by physiotherapy and rehabilitation, ensuring patients regain strength and independence. With a patient-first philosophy, he emphasizes personalized treatment plans tailored to individual needs.",
+    "A member of the Karnataka Orthopaedic Association (KOA), Dr. Joshi has actively participated in CMEs, presented at conferences, and continues to stay updated with the latest developments in orthopaedic care. His practice is centered on delivering compassionate, precise, and patient-focused treatment to restore mobility and improve quality of life.",
   progress: [
     { title: "Joint Replacement Surgery", percent: "90%" },
     { title: "Orthopaedic Trauma Care", percent: "85%" },
@@ -41,21 +41,21 @@ const preranaDetailsData = {
   image: "/gallery/dr-prerana-r-t.png",
   name: "Dr. Prerana R T",
   about:
-    "General and Laparoscopic Surgeon. She is committed to providing safe, precise, and advanced surgical care with a focus on faster recovery and improved patient outcomes.",
+    "Dr. Prerana is a skilled surgeon with advanced training in minimally invasive (keyhole) surgery. She completed her medical education at JSS Medical College, Mysore, followed by MS in General Surgery from Punjab, and a Fellowship in Minimal Invasive Surgery(RGUHS recognised) from the prestigious Bangalore Medical College & Research Institute. She is also a certified member of IAGES with specialized training in laparoscopic hernia surgery (FIAGES, FALS – Hernia).",
   contact: "+91 9108636085",
   subHref: "tel",
   socialLinks: [
-    {
-      name: "Facebook",
-      href: "https://facebook.com",
-      icon: "fab fa-facebook-f",
-    },
-    {
-      name: "LinkedIn",
-      href: "https://linkedin.com",
-      icon: "fab fa-linkedin-in",
-    },
-    { name: "Twitter", href: "https://twitter.com", icon: "fab fa-twitter" },
+    // {
+    //   name: "Facebook",
+    //   href: "https://facebook.com",
+    //   icon: "fab fa-facebook-f",
+    // },
+    // {
+    //   name: "LinkedIn",
+    //   href: "https://linkedin.com",
+    //   icon: "fab fa-linkedin-in",
+    // },
+    // { name: "Twitter", href: "https://twitter.com", icon: "fab fa-twitter" },
     {
       name: "Instagram",
       href: "https://instagram.com",
@@ -63,7 +63,7 @@ const preranaDetailsData = {
     },
   ],
   additionalText:
-    "Dr. Prerana R T is a skilled General and Laparoscopic Surgeon with expertise in performing a wide range of surgical procedures using both conventional and minimally invasive techniques. She specializes in treating conditions such as gallbladder stones, hernia, appendix disorders, gastrointestinal surgeries, and other abdominal procedures. \n\nHer proficiency in laparoscopic surgery allows patients to benefit from smaller incisions, reduced pain, quicker recovery, and minimal scarring. Dr. Prerana’s patient-centric approach ensures that every treatment plan is tailored to the individual’s health condition and lifestyle. \n\nShe is dedicated to delivering high-quality surgical care, combining clinical precision with compassion. Her focus remains on early diagnosis, safe surgical techniques, and comprehensive post-operative care, enabling patients to regain their health and confidence.",
+    "At BGS Hospital, Kengeri, Dr. Prerana provides comprehensive surgical care with a focus on laparoscopic hernia surgery, Gallstones, appendix, thyroid diseases, breast lumps, piles, fissure, fistula, diabetic foot ulcers, LASER and sclerotherapy for Varicose veins. Passionate about safe and patient-centered care, she stays updated with the latest advances and has actively shared her work through publications and presentations at national and international conferences.",
   progress: [
     { title: "General Surgery", percent: "90%" },
     { title: "Laparoscopic Surgery", percent: "88%" },
