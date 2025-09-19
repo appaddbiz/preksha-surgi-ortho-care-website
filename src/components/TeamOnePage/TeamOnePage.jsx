@@ -75,7 +75,7 @@ const TeamOnePage = ({ titleTwo }) => {
                       {/* <div className="team-card__hover">
                         <div className="team-card__social">
                           <i className="fa fa-phone-alt"></i>
-                          <a href="tel:+919108636085"></a>
+                          <a href="https://wa.link/ymgeaz"></a>
                           <div className="team-card__social__list">
                             {socials.map(({ id, icon, title, link }) => (
                               <Link key={id} href={link}>

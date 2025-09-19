@@ -19,7 +19,7 @@ const contactTwoData = {
       icon: "icon-phone-call",
       title: "Call Us Now",
       text: "+91 9108636085",
-      href: "tel:+919108636085",
+      href: "https://wa.link/ymgeaz",
       subHref: "tel",
     },
     {

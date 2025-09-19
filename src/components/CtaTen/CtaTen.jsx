@@ -26,7 +26,16 @@ const CtaTen = () => {
     <section className="cta-ten">
       <Container>
         <Row>
-          <Col lg={2} className="wow fadeInUp" data-wow-delay="00ms" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+          <Col
+            lg={2}
+            className="wow fadeInUp"
+            data-wow-delay="00ms"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             <div className="progress-box">
               <VisibilitySensor
                 offset={{ top: 10 }}

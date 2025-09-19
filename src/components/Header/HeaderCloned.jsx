@@ -93,7 +93,7 @@ const HeaderCloned = ({ dark, rtl }) => {
               <span></span>
             </Link> */}
             <Link
-              href="tel:+919108636085"
+              href="https://wa.link/ymgeaz"
               className="tolak-btn main-header__btn"
             >
               <b>Appointment</b>

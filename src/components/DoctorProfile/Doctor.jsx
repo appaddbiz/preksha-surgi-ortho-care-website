@@ -72,7 +72,7 @@ const Doctor = () => {
                                 </Link>{" "}
                                 &ensp;
                                 <Link
-                                  href="tel:+919108636085"
+                                  href="https://wa.link/ymgeaz"
                                   className="tolak-btn-two tolak-btn-two--home-six"
                                 >
                                   <span className="tolak-btn-two__left-star"></span>
@@ -134,7 +134,7 @@ const Doctor = () => {
                                 </Link>{" "}
                                 &ensp;
                                 <Link
-                                  href="tel:+919108636085"
+                                  href="https://wa.link/ymgeaz"
                                   className="tolak-btn-two tolak-btn-two--home-six"
                                 >
                                   <span className="tolak-btn-two__left-star"></span>

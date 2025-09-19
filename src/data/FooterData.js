@@ -166,7 +166,7 @@ const footerData = {
     text: "ps.surgiandorthocare@gmail.com",
     href: "mailto:ps.surgiandorthocare@gmail.com",
   },
-  phone: { number: "9108636085", href: "tel:+919108636085" },
+  phone: { number: "9108636085", href: "https://wa.link/ymgeaz" },
   address: {
     text: "412, 1st Main Rd, Happy Valley Layout, Subramanyapura, Bengaluru, Karnataka 560061",
     href: "https://maps.app.goo.gl/JxoptRS8ZGbAENk46",

@@ -199,7 +199,7 @@ const AboutThree = () => {
                       </Col>
                       <Col md={6}>
                         <Link
-                          href="tel:+919108636085"
+                          href="https://wa.link/ymgeaz"
                           className="tolak-btn about-one-img"
                         >
                           <b>Book An Appointment</b>

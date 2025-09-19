@@ -54,7 +54,7 @@ const MobileNav = () => {
           </li>
           <li>
             <i className="fa fa-phone-alt"></i>
-            <a href="tel:+919108636085">+91 9108636085</a>
+            <a href="https://wa.link/ymgeaz">+91 9108636085</a>
           </li>
         </ul>
         <div className="mobile-nav__social">

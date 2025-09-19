@@ -136,6 +136,144 @@ const FooterTwo = ({ pageTitle }) => {
           </Row>
         </Container>
       </div>
+      <section
+        style={{
+          position: "fixed",
+          bottom: 0,
+          zIndex: 999,
+          width: "100vw",
+          background: "#fff",
+        }}
+        className="desk-view container-full"
+      >
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            width: "100vw",
+            height: "60px",
+            zIndex: 999,
+          }}
+        >
+          <div style={{ width: "25%" }}>
+            <Link
+              href="https://maps.app.goo.gl/kPm2jTPCJErbVw1j8"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexDirection: "column",
+                paddingTop: "10px",
+                gap: "10px",
+                textDecoration: "none",
+                backgroundColor: "#3d2b99",
+                height: "100%",
+              }}
+            >
+              <img
+                src="/icons/google-maps (1).svg"
+                alt="Google Maps"
+                height="25px"
+                width="25px"
+              />
+              <p style={{ fontSize: "12px", color: "white", fontWeight: 600 }}>
+                LOCATE US
+              </p>
+            </Link>
+          </div>
+          <div style={{ width: "25%" }}>
+            <Link
+              href="https://wa.link/ymgeaz"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexDirection: "column",
+                textDecoration: "none",
+                paddingTop: "10px",
+                gap: "10px",
+                backgroundColor: "#3d2b99",
+                height: "100%",
+              }}
+            >
+              <img
+                src="/icons/whatsapp (1).svg"
+                alt="WhatsApp"
+                height="25px"
+                width="25px"
+              />
+              <p style={{ fontSize: "12px", color: "white", fontWeight: 600 }}>
+                WHATSAPP
+              </p>
+            </Link>
+          </div>
+          <div style={{ width: "25%" }}>
+            <Link
+              href="tel:+919108636085"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexDirection: "column",
+                paddingTop: "10px",
+                gap: "10px",
+                textDecoration: "none",
+                backgroundColor: "#3d2b99",
+                height: "100%",
+              }}
+            >
+              <img src="/icons/app.svg" alt="Call" height="25px" width="25px" />
+              <p
+                style={{
+                  fontSize: "12px",
+                  color: "#fff",
+                  fontWeight: 600,
+                }}
+              >
+                CALL
+              </p>
+            </Link>
+          </div>
+          <div style={{ width: "25%" }}>
+            <Link
+              href="https://wa.link/ymgeaz"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexDirection: "column",
+                paddingTop: "10px",
+                gap: "10px",
+                textDecoration: "none",
+                backgroundColor: "#3d2b99",
+                height: "100%",
+              }}
+            >
+              <img
+                src="/icons/medical-appointment (1).svg"
+                alt="Appointment"
+                height="25px"
+                width="25px"
+              />
+              <p
+                style={{
+                  overflowWrap: "break-word",
+                  fontSize: "12px",
+                  color: "#fff",
+                  fontWeight: 600,
+                }}
+              >
+                APPOINTMENT
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
     </footer>
   );
 };

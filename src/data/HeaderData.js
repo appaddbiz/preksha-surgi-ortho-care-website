@@ -663,7 +663,7 @@ const headerData = {
       id: 3,
       icon: faPhone,
       content: "+91 9108636085",
-      href: "tel:+919108636085",
+      href: "https://wa.link/ymgeaz",
     },
   ],
 

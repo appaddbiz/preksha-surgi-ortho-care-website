@@ -87,7 +87,8 @@ const CtaOne = ({ rtl, page }) => {
                 </Link>
               </div> */}
               <p className="cta-one__content__text" style={{ color: "white" }}>
-                {conText} <Link href="tel:+919108636085">{conLinkText}</Link>
+                {conText}{" "}
+                <Link href="https://wa.link/ymgeaz">{conLinkText}</Link>
               </p>
             </div>
           </Col>
