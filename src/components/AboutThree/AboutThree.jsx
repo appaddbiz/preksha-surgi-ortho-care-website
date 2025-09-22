@@ -85,7 +85,7 @@ const AboutThree = () => {
                           alt="tolak"
                         />
                       </div>
-                      <div className="about-one-img about-three__fact count-box">
+                      {/* <div className="about-one-img about-three__fact count-box">
                         <div className="about-three__fact__icon">
                           <i className={factIcon}></i>
                         </div>
@@ -100,7 +100,7 @@ const AboutThree = () => {
                           k+
                         </h3>
                         <p className="about-three__fact__text">{factText}</p>
-                      </div>
+                      </div> */}
                     </ScrollTrigger>
                   </Col>
                   <Col md={6}>
