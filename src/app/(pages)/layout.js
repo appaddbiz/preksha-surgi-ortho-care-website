@@ -24,7 +24,7 @@ import "@/assets/css/tolak-dark.css";
 import { usePathname } from "next/navigation";
 
 import { useEffect, useState } from "react";
-// import Plugin from "@/components/Plugin/Plugin";
+import Plugin from "@/components/Plugin/Plugin";
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
@@ -78,7 +78,7 @@ export default function RootLayout({ children }) {
 
         <ThemeProvider>
           {children}
-          {/* <Plugin /> */}
+          <Plugin />
         </ThemeProvider>
         {/* </ThemeSwitcherProvider> */}
       </body>
