@@ -38,17 +38,23 @@ const Plugin = () => {
             if (this.response && this.response !== "0") {
               const temp = this.response.split("||||||||||");
 
-              // Clear previous injected content before adding new
+              // Remove previously injected content
               jQuery("#plugin-title").remove();
               jQuery("#plugin-body").remove();
 
-              if (temp[0]) {
+              // Only inject if content is valid
+              if (temp[0]?.trim()) {
                 jQuery("head").append(
                   `<div id="plugin-title">${temp[0]}</div>`
                 );
               }
-              if (temp[1]) {
-                jQuery("body").append(`<div id="plugin-body">${temp[1]}</div>`);
+              if (temp[1]?.trim()) {
+                // Delay injection to ensure body is mounted
+                setTimeout(() => {
+                  jQuery("body").append(
+                    `<div id="plugin-body">${temp[1]}</div>`
+                  );
+                }, 200);
               }
             }
           }
@@ -66,9 +72,12 @@ const Plugin = () => {
       }
     };
 
-    // Ensure jQuery is ready, then run plugin
-    ensureJQuery(executeCustomScript);
-  }, [pathname]); // Runs on every route change
+    // Run plugin after jQuery is ready
+    ensureJQuery(() => {
+      // Small delay ensures page DOM is mounted
+      setTimeout(executeCustomScript, 300);
+    });
+  }, [pathname]);
 
   return null;
 };
