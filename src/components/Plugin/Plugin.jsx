@@ -27,7 +27,7 @@ const Plugin = () => {
             const temp = mystr.split("||||||||||");
 
             // Replace <title> and append new content
-            jQuery("head").find("title").remove();
+            jQuery("head").find("title");
             jQuery("head").append(temp[0]);
             jQuery("body").append(temp[1]);
           }
