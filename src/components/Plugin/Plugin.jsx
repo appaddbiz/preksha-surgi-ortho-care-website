@@ -4,23 +4,19 @@ import React, { useEffect } from "react";
 
 const Plugin = () => {
   useEffect(() => {
-    const loadCustomScript = () => {
-      // Check if jQuery is already loaded
+    const loadJQuery = (callback) => {
       if (window.jQuery) {
-        executeCustomScript();
+        callback();
       } else {
-        // Dynamically load jQuery
         const script = document.createElement("script");
         script.src =
           "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js";
-        script.onload = () => {
-          executeCustomScript();
-        };
+        script.onload = callback;
         document.head.appendChild(script);
       }
     };
 
-    const executeCustomScript = () => {
+    const executeScript = () => {
       const eppathurl = window.location.origin + window.location.pathname;
       const eptagmanage = new XMLHttpRequest();
 
@@ -30,7 +26,7 @@ const Plugin = () => {
             const mystr = this.response;
             const temp = mystr.split("||||||||||");
 
-            // Same as your original script
+            // Replace <title> and append new content
             jQuery("head").find("title").remove();
             jQuery("head").append(temp[0]);
             jQuery("body").append(temp[1]);
@@ -47,7 +43,7 @@ const Plugin = () => {
       eptagmanage.send();
     };
 
-    loadCustomScript();
+    loadJQuery(executeScript);
   }, []);
 
   return null;
