@@ -11,11 +11,10 @@ import Sidebar from "../Sidebar/Sidebar";
 import ScrollTop from "../ScrollTop/ScrollTop";
 import { usePathname } from "next/navigation";
 import { Toaster } from "react-hot-toast";
+import Plugin from "../Plugin/Plugin";
 
 const Layout = ({ children, pageTitle }) => {
   const [mounted, setMounted] = useState(false);
-
-
 
   useEffect(() => {
     setMounted(true);
@@ -66,15 +65,10 @@ const Layout = ({ children, pageTitle }) => {
     };
   }, [mounted]);
 
-
-
-
   useEffect(() => {
     if (!mounted) return;
 
     AOS.init();
-
-
   }, [mounted]);
 
   if (!mounted) {
@@ -85,8 +79,9 @@ const Layout = ({ children, pageTitle }) => {
     <>
       {/* <CustomCursor /> */}
       {/* <Preloader /> */}
-      <div className='page-wrapper'>
+      <div className="page-wrapper">
         {children}
+        <Plugin />
       </div>
       <MobileNav />
       {/* <Search /> */}

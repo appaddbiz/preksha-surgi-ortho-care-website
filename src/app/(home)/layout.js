@@ -78,7 +78,7 @@ export default function RootLayout({ children }) {
 
         <ThemeProvider>
           {children}
-          <Plugin />
+          
         </ThemeProvider>
         {/* </ThemeSwitcherProvider> */}
       </body>
