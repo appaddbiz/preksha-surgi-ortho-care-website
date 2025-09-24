@@ -79,7 +79,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           {children}
 
-          <Script
+          {/* <Script
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
             strategy="afterInteractive"
           />
@@ -118,7 +118,7 @@ export default function RootLayout({ children }) {
       window.addEventListener("load", execute); 
     }
   })();
-`}</Script>
+`}</Script> */}
         </ThemeProvider>
         {/* </ThemeSwitcherProvider> */}
       </body>
