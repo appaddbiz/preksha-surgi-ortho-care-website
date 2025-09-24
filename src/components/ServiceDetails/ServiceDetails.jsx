@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
 // import AnimatedProgressBar from "@/components/AnimatedProgressBar";
-import serviceDetailsData from "@/data/ServiceDetailsData";
+import { serviceDetailsData } from "@/data/ServiceDetailsData";
 import AnimatedProgressBar from "../AnimatedProgressBar/AnimatedProgressBar";
 import { usePathname } from "next/navigation";
 
