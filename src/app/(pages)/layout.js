@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import "@fontsource/rubik/latin.css";
 import "@fontsource/raleway/latin.css";
@@ -21,27 +21,27 @@ import "aos/dist/aos.css";
 
 import "@/assets/css/tolak.css";
 import "@/assets/css/tolak-dark.css";
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import Plugin from "@/components/Plugin/Plugin";
 
 export default function RootLayout({ children }) {
-  const pathname = usePathname();
-  const [themeState, setThemeState] = useState("light");
+  // const pathname = usePathname();
+  // const [themeState, setThemeState] = useState("light");
 
-  useEffect(() => {
-    if (
-      pathname === "/home1-dark" ||
-      pathname === "/home2-dark" ||
-      pathname === "/home3-dark" ||
-      pathname === "/home4-dark"
-    ) {
-      setThemeState("dark");
-    } else {
-      setThemeState("light");
-    }
-  }, [pathname]);
+  // useEffect(() => {
+  //   if (
+  //     pathname === "/home1-dark" ||
+  //     pathname === "/home2-dark" ||
+  //     pathname === "/home3-dark" ||
+  //     pathname === "/home4-dark"
+  //   ) {
+  //     setThemeState("dark");
+  //   } else {
+  //     setThemeState("light");
+  //   }
+  // }, [pathname]);
 
   // useEffect(() => {
   //   if (themeState === "dark") {
@@ -56,23 +56,23 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`custom-cursor ${
-          pathname === "/home5"
-            ? "home5"
-            : pathname === "/home5-one"
-            ? "home5"
-            : pathname === "/home6"
-            ? "home6"
-            : pathname === "/home6-one"
-            ? "home6"
-            : pathname === "/home7"
-            ? "home7"
-            : pathname === "/home7-one"
-            ? "home7"
-            : pathname === "/home-boxed"
-            ? "boxed-wrapper"
-            : ""
-        } ${themeState}`}
+      // className={`custom-cursor ${
+      //   pathname === "/home5"
+      //     ? "home5"
+      //     : pathname === "/home5-one"
+      //     ? "home5"
+      //     : pathname === "/home6"
+      //     ? "home6"
+      //     : pathname === "/home6-one"
+      //     ? "home6"
+      //     : pathname === "/home7"
+      //     ? "home7"
+      //     : pathname === "/home7-one"
+      //     ? "home7"
+      //     : pathname === "/home-boxed"
+      //     ? "boxed-wrapper"
+      //     : ""
+      // } ${themeState}`}
       >
         {/* <ThemeSwitcherProvider themeMap={themes} defaultTheme={themeState}> */}
 
