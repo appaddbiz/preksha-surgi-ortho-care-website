@@ -13,17 +13,10 @@ import useScrollUp from "@/hooks/useScrollUp";
 const { navItems, main_logo, logo_light, logo_rtl } = headerData;
 
 const Header = ({ dark, rtl }) => {
-  const [mounted, setMounted] = useState(false);
   const scrollToTop = useScrollUp(500);
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   const { toggleSearch, handleToggle, toggleSidebar } = useRootContext();
 
-  if (!mounted) {
-    return null;
-  }
   return (
     <header
       className={`main-header sticky-header sticky-header--normal  ${
